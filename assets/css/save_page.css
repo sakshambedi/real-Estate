@@ -10,6 +10,22 @@
     --house-color: #0288D1;
 }
 
+
+.breadcrumbs {
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+
 .content{
   display: flex;
   flex-wrap: wrap;
