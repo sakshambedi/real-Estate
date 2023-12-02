@@ -33,48 +33,6 @@ body {
   height: 50px;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  margin-left: -90px;
-  margin-top: 10px;
-  border-radius: 10px;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  display: block;
-  text-decoration: none;
-}
-
-.property-card a {
-  text-decoration: none;
-}
-
-.dropdown-content a:hover {
-  /* background-color: #ddd; */
-  border-radius: 10px;
-}
-
-.user-icon:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  right: 10%;
-  margin-left: -5px;
-  border-width: 0 5px 10px 5px;
-  border-style: solid;
-  border-color: transparent transparent #f9f9f9 transparent;
-}
-
 /* SEARCH BAR */
 .search-box-wrapper {
   display: flex;

@@ -1,256 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
 
     <!-- Google map  -->
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places" defer></script> -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script> 
+    <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
 
     <link rel="stylesheet" type="text/css" href="../assets/css/style_map.css" />
     <link rel="stylesheet" href="../assets/css/nav-bar.css" />
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
 
-    
     <script type="module" src="../assets/js/script_map.js"></script>
 
     <title>maps</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source Sans Pro"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- <link rel="stylesheet" href="../assets/css/nav-bar.css" /> -->
     <style>
       html {
-      scroll-behavior: smooth;
-    }
-    h1,h2,h3,h4,h5,h6 {font-family: "Roboto"}
-    body {font-family: "Roboto"}
+        scroll-behavior: smooth;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Roboto";
+      }
+      body {
+        font-family: "Roboto";
+      }
     </style>
-</head>
-<body>
-
-
-<!--The div element for the map -->
-<header class="header">
-  <a href="../index.html"><img src="../assets/logo/logo_no_bg.png" alt="Our Logo" class="logo"></a>
-  <!-- <nav class="user-nav"> -->
-  <ul class="nav_links">
-    <!-- <li><a href="pages/Dashboard.html">Dashboard</a></li> -->
-    <li><a href="map.html">Maps</a></li>
-    <li><a href="save-page.html">Saves/Compare</a></li>
-    <li><a href="Sell.html">Sell</a></li>
-  </ul>
-  <!-- <a class="cta" href="pages/user-profile.html"><img class="user-account-svg" src="./assets/icons/user.svg" /></a> -->
-  <div class="user-icon">
-    <a href="/pages/user-profile.html"><img class="user-account-svg" src="../assets/icons/user.svg"></a>
-    <div class="dropdown-content">
-      <a href="#">Preferences</a>
-      <a href="#">Settings</a>
-      <a href="/pages/log_in.html">Sign In</a>
-    </div>
-  </div>
-  <div class="dropdown-content">
-    <a href="#">Preferences</a>
-    <a href="#">Settings</a>
-    <a href="#">Logout</a>
-  </div>
-  <!-- </nav> -->
-</header>
-
-
-<div class="content">
-    <div class="sidebar">
-      <div class="results">
-        Results: 10 Listings
+  </head>
+  <body>
+    <!--The div element for the map -->
+    <header class="header">
+      <a href="../index.html"
+        ><img src="../assets/logo/logo_no_bg.png" alt="Our Logo" class="logo"
+      /></a>
+      <!-- <nav class="user-nav"> -->
+      <ul class="nav_links">
+        <!-- <li><a href="pages/Dashboard.html">Dashboard</a></li> -->
+        <li><a href="map.html">Maps</a></li>
+        <li><a href="save-page.html">Saves/Compare</a></li>
+        <li><a href="Sell.html">Sell</a></li>
+      </ul>
+      <!-- <a class="cta" href="pages/user-profile.html"><img class="user-account-svg" src="./assets/icons/user.svg" /></a> -->
+      <div class="user-icon">
+        <a href="#"
+          ><img class="user-account-svg" src="../assets/icons/user.svg"
+        /></a>
+        <div class="dropdown-content">
+          <a href="./user-profile.html">Settings</a>
+          <a href="./log_in.html">Sign In</a>
+        </div>
       </div>
-      <div class="sidebaritem mousescroll">
-        
-        <!--Popular-Properties-Section-->
-        <section class="property-content">
-          <div id="property-listing">
+      <!-- </nav> -->
+    </header>
 
-          </div>
-        </section>
+    <div class="content">
+      <div class="sidebar">
+        <div class="results">Results: 10 Listings</div>
+        <div class="sidebaritem mousescroll">
+          <!--Popular-Properties-Section-->
+          <section class="property-content">
+            <div id="property-listing"></div>
+          </section>
+        </div>
       </div>
+
+      <!-- <div class="map"></div> -->
+      <div id="map"><img src="../assets/imgs/map.png" /></div>
     </div>
- 
-  <!-- <div class="map"></div> -->
-  <div id="map">  <img src="../assets/imgs/map.png" /> </div>
-  
-</div>
-<script>
-  const properties = [
-    {
-      id: 1,
-      address: "919 Manitoba Avenue Winnipeg, Manitoba R2X0J9",
-      description: "Single family house with modern design",
-      price: "$ 180,000",
-      type: "home",
-      bed: 3,
-      bath: 0,
-      size: 1012,
-      position: {
-        lat: 49.916605, 
-        lng: -97.154429,
-      },
-      imagePath: "../assets/housing images/house1/house1_1.jpeg",
-    },
-    {
-      id: 2,
-      address: "40 Jette Cove Winnipeg, Manitoba R2C5T4",
-      description: "Townhouse with friendly neighbors",
-      price: "$ 619,999",
-      type: "home",
-      bed: 4,
-      bath: 3,
-      size: 1789,
-      position: {
-        lat: 49.874695, 
-        lng: -97.147562,
-      },
-      imagePath: "../assets/housing images/house2/house2_1.jpeg",
-    },
-    {
-      id: 3,
-      address: "638 Gilmore Avenue Winnipeg, Manitoba R2G2P6",
-      description: "Spacious house great for small business",
-      price: "$ 349,900",
-      type: "home",
-      bed: 3,
-      bath: 2,
-      size: 1076,
-      position: {
-        lat: 49.911520, 
-        lng: -97.114946,
-      },
-      imagePath: "../assets/housing images/house3/house3_1.jpeg",
-    },
-    {
-      id: 4,
-      address: "362 Tyson Trail Winnipeg, Manitoba R3W0K9",
-      description: "A lovely store on busy road",
-      price: "$  455,900",
-      type: "home",
-      bed: 3,
-      bath: 3,
-      size: 1551,
-      position: {
-        lat: 49.889959, 
-        lng: -97.110312,
-      },
-      imagePath: "../assets/housing images/house4/house4_1.jpeg",
-    },
-    {
-      id: 5,
-      address: "393 Maryland Street Winnipeg, Manitoba R3G1M1",
-      description: "Single family house near golf club",
-      price: "$ 165,000",
-      type: "home",
-      bed: 3,
-      bath: 1,
-      size: 1264,
-      position: {
-        lat: 49.898364, 
-        lng: -97.172625,
-      },
-      imagePath: "../assets/housing images/house5/house5_1.jpeg",
-    },
-    {
-      id: 6,
-      address: "484 Agnes Street Winnipeg, Manitoba R3G1N6",
-      description: "Multifloor large warehouse",
-      price: "$ 44,900",
-      type: "home",
-      bed: 0,
-      bath: 0,
-      size: 1350,
-      position: {
-        lat: 49.880337, 
-        lng: -97.173311,
-      },
-      imagePath: "../assets/housing images/house6/house6_1.jpeg",
-    },
-    {
-      id: 7,
-      address: "1844 Pacific Avenue Winnipeg, Manitoba R2R0G1",
-      description: "3 storey townhouse with 2 car garage",
-      price: "$ 339,900",
-      type: "home",
-      bed: 3,
-      bath: 2,
-      size: 1076,
-      position: {
-        lat: 49.898585, 
-        lng: -97.146532,
-      },
-      imagePath: "../assets/housing images/house7/house7_1.jpeg"
-    },
-    {
-      id: 8,
-      address: "219 Tyson Trail Winnipeg, Manitoba R3W0R1",
-      description: "Single family house in great school zone",
-      price: "$ 619,900",
-      type: "home",
-      bed: 4,
-      bath: 3,
-      size: 1665,
-      position: {
-        lat: 49.875691, 
-        lng: -97.113402,
-      },
-      imagePath: "../assets/housing images/house8/house8_1.jpeg"
-    },
-    {
-      id: 9,
-      address: "503 3080 Pembina Highway Winnipeg, Manitoba R3T4N1",
-      description: "2 storey store with large storage room",
-      price: "$ 209,900",
-      type: "home",
-      bed: 2,
-      bath: 1,
-      size: 1100,
-      position: {
-        lat: 49.860864, 
-        lng: -97.153742,
-      },
-      imagePath: "../assets/housing images/house9/house9_1.jpeg"
-    },
-    {
-      id: 10,
-      address: "475 Centennial Street Winnipeg, Manitoba R3N1P8",
-      description: "Single family house",
-      price: "$ 599,900",
-      type: "home",
-      bed: 5,
-      bath: 4,
-      size: 1652,
-      position: {
-        lat: 49.881664, 
-        lng: -97.187559,
-      },
-      imagePath: "../assets/housing images/house10/house10_1.jpeg"
-    },
-    
-  ];
-  
-  
-    // Generate sidebard content
-    for (const property of properties) {
-      const container = document.getElementById("property-listing");
-      container.appendChild(sidebar_content(property));
-    }
-  
-    //Build sidebar content
-    function sidebar_content(property){
-      const content = document.createElement("div");
-      content.classList.add("property-card");
-      content.innerHTML = `  
+    <script>
+      const properties = [
+        {
+          id: 1,
+          address: "919 Manitoba Avenue Winnipeg, Manitoba R2X0J9",
+          description: "Single family house with modern design",
+          price: "$ 180,000",
+          type: "home",
+          bed: 3,
+          bath: 0,
+          size: 1012,
+          position: {
+            lat: 49.916605,
+            lng: -97.154429,
+          },
+          imagePath: "../assets/housing images/house1/house1_1.jpeg",
+        },
+        {
+          id: 2,
+          address: "40 Jette Cove Winnipeg, Manitoba R2C5T4",
+          description: "Townhouse with friendly neighbors",
+          price: "$ 619,999",
+          type: "home",
+          bed: 4,
+          bath: 3,
+          size: 1789,
+          position: {
+            lat: 49.874695,
+            lng: -97.147562,
+          },
+          imagePath: "../assets/housing images/house2/house2_1.jpeg",
+        },
+        {
+          id: 3,
+          address: "638 Gilmore Avenue Winnipeg, Manitoba R2G2P6",
+          description: "Spacious house great for small business",
+          price: "$ 349,900",
+          type: "home",
+          bed: 3,
+          bath: 2,
+          size: 1076,
+          position: {
+            lat: 49.91152,
+            lng: -97.114946,
+          },
+          imagePath: "../assets/housing images/house3/house3_1.jpeg",
+        },
+        {
+          id: 4,
+          address: "362 Tyson Trail Winnipeg, Manitoba R3W0K9",
+          description: "A lovely store on busy road",
+          price: "$  455,900",
+          type: "home",
+          bed: 3,
+          bath: 3,
+          size: 1551,
+          position: {
+            lat: 49.889959,
+            lng: -97.110312,
+          },
+          imagePath: "../assets/housing images/house4/house4_1.jpeg",
+        },
+        {
+          id: 5,
+          address: "393 Maryland Street Winnipeg, Manitoba R3G1M1",
+          description: "Single family house near golf club",
+          price: "$ 165,000",
+          type: "home",
+          bed: 3,
+          bath: 1,
+          size: 1264,
+          position: {
+            lat: 49.898364,
+            lng: -97.172625,
+          },
+          imagePath: "../assets/housing images/house5/house5_1.jpeg",
+        },
+        {
+          id: 6,
+          address: "484 Agnes Street Winnipeg, Manitoba R3G1N6",
+          description: "Multifloor large warehouse",
+          price: "$ 44,900",
+          type: "home",
+          bed: 0,
+          bath: 0,
+          size: 1350,
+          position: {
+            lat: 49.880337,
+            lng: -97.173311,
+          },
+          imagePath: "../assets/housing images/house6/house6_1.jpeg",
+        },
+        {
+          id: 7,
+          address: "1844 Pacific Avenue Winnipeg, Manitoba R2R0G1",
+          description: "3 storey townhouse with 2 car garage",
+          price: "$ 339,900",
+          type: "home",
+          bed: 3,
+          bath: 2,
+          size: 1076,
+          position: {
+            lat: 49.898585,
+            lng: -97.146532,
+          },
+          imagePath: "../assets/housing images/house7/house7_1.jpeg",
+        },
+        {
+          id: 8,
+          address: "219 Tyson Trail Winnipeg, Manitoba R3W0R1",
+          description: "Single family house in great school zone",
+          price: "$ 619,900",
+          type: "home",
+          bed: 4,
+          bath: 3,
+          size: 1665,
+          position: {
+            lat: 49.875691,
+            lng: -97.113402,
+          },
+          imagePath: "../assets/housing images/house8/house8_1.jpeg",
+        },
+        {
+          id: 9,
+          address: "503 3080 Pembina Highway Winnipeg, Manitoba R3T4N1",
+          description: "2 storey store with large storage room",
+          price: "$ 209,900",
+          type: "home",
+          bed: 2,
+          bath: 1,
+          size: 1100,
+          position: {
+            lat: 49.860864,
+            lng: -97.153742,
+          },
+          imagePath: "../assets/housing images/house9/house9_1.jpeg",
+        },
+        {
+          id: 10,
+          address: "475 Centennial Street Winnipeg, Manitoba R3N1P8",
+          description: "Single family house",
+          price: "$ 599,900",
+          type: "home",
+          bed: 5,
+          bath: 4,
+          size: 1652,
+          position: {
+            lat: 49.881664,
+            lng: -97.187559,
+          },
+          imagePath: "../assets/housing images/house10/house10_1.jpeg",
+        },
+      ];
+
+      // Generate sidebard content
+      for (const property of properties) {
+        const container = document.getElementById("property-listing");
+        container.appendChild(sidebar_content(property));
+      }
+
+      //Build sidebar content
+      function sidebar_content(property) {
+        const content = document.createElement("div");
+        content.classList.add("property-card");
+        content.innerHTML = `  
       <a href="detail.html">
       <img src="${property.imagePath}" />
       <div class="address">${property.address} </div> <br>
@@ -258,46 +262,42 @@
       <i class="fa-solid fa-bed" style="color: #0f4c75;"></i> ${property.bed} <i class="fa-solid fa-bath" style="color: #0f4c75;"></i> ${property.bath} <br>
       </a>
       `;
-      return content;
-    }
-  </script>
-<!-- Footer here -->
-<div class="main-footer">
-  <div class="useful-links">
-    <h4>Useful Links</h4>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-    <a href="#blog">Blog</a>
-  </div>
-  <div class="newsletter">
-    <h4>Newsletter</h4>
-    <form><input type="email" placeholder="Your Email ID" required>
-      <br>
-      <button type="submit">Subscribe Now</button>
-    </form>
-  </div>
-  <div class="contact">
-    <h4>Contact</h4>
-    <p>Abc Address</p>
-    <p>DEF City, R3T3N8, Canada</p>
-    <div class="social-icons">
-      <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-      <i class=" fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-      <i class="fa-regular fa-x" style="color: #ffffff;"></i>
-      <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+        return content;
+      }
+    </script>
+    <!-- Footer here -->
+    <div class="main-footer">
+      <div class="useful-links">
+        <h4>Useful Links</h4>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+      </div>
+      <div class="newsletter">
+        <h4>Newsletter</h4>
+        <form>
+          <input type="email" placeholder="Your Email ID" required />
+          <br />
+          <button type="submit">Subscribe Now</button>
+        </form>
+      </div>
+      <div class="contact">
+        <h4>Contact</h4>
+        <p>Abc Address</p>
+        <p>DEF City, R3T3N8, Canada</p>
+        <div class="social-icons">
+          <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+          <i class="fa-brands fa-facebook-f" style="color: #ffffff"></i>
+          <i class="fa-regular fa-x" style="color: #ffffff"></i>
+          <i class="fa-brands fa-linkedin-in" style="color: #ffffff"></i>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<!-- Footer Ends Here -->
+    <!-- Footer Ends Here -->
 
-
-
-<!-- Google map api -->
-<!-- <script> (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+    <!-- Google map api -->
+    <!-- <script> (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
   ({key: "AIzaSyB8RT82eGLVTaGzpjdr4QRoDhndRTy0yw0", v: "weekly"});</script> -->
-
-  
-</body>
-
+  </body>
 </html>
