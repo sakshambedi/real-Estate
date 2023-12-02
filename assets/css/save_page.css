@@ -1,25 +1,24 @@
 :root {
-    --darkPrimaryColor: #001f3f;
-    --secondaryColor: #0f4c75;
-    --tertiaryColor: #3282b8;
-    --quaternaryColor: #bbe1fa;
-    --lightPrimaryColor: #ebe9e5;
-    --whiteColor: #ffffff;
-    --blackColor: #000000;
+  --darkPrimaryColor: #001f3f;
+  --secondaryColor: #0f4c75;
+  --tertiaryColor: #3282b8;
+  --quaternaryColor: #bbe1fa;
+  --lightPrimaryColor: #ebe9e5;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
 
-    --house-color: #0288D1;
+  --house-color: #0288d1;
 }
 
-.content{
+.content {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
 }
 
-.property-card a{
+.property-card a {
   text-decoration: none;
 }
-
 
 /*
 .property-img img{
@@ -27,7 +26,7 @@
   width: 20%;
 } */
 
-.sidebar{
+.sidebar {
   padding-top: 15px;
   flex-basis: auto;
   height: 880px;
@@ -43,7 +42,7 @@
   font-size: 20px;
   margin-left: 25px;
 }
-.compare-button{
+.compare-button {
   float: right;
   background-color: var(--darkPrimaryColor);
   border: none;
@@ -56,7 +55,7 @@
 
 .mousescroll {
   overflow: hidden;
-  height:100%;    
+  height: 100%;
 }
 .mousescroll:hover {
   overflow-y: scroll;
@@ -67,67 +66,68 @@
   text-align: center;
 }
 
-
 .logo img {
-    float: left;
-    margin: 10px 0 0px 20px;
-    height: 50px;
+  float: left;
+  margin: 10px 0 0px 20px;
+  height: 50px;
 }
 
 .property-card img {
-    float: left;
-    margin: -10px 0 0px -20px;
-    padding: 10px;
-    width: 180px;
-    height: 130px;
+  float: left;
+  margin: -10px 0 0px -22px;
+  padding: 10px;
+  width: 180px;
+  height: 130px;
 }
 /* .property-listing {
     display: flex;
     margin: 10px 0px 0 0;
 } */
 .property-card {
-    width: 640px;
-    height: 150px;
-    margin: 10px 0 20px 20px;
-    padding: 20px;
-    font-size: 12px;
-    text-align: left;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 4px 20px 10px rgba(0, 0, 0, 0.2);
+  width: 640px;
+  height: 150px;
+  margin: 10px 0 9px 20px;
+  padding: 20px;
+  font-size: 12px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 31, 63, 0.5);
 }
 
 .property-card .address {
-    color: var(--blackColor);
-    font-size: 16px;
-    margin-top: -18px;
+  color: var(--blackColor);
+  font-size: 16px;
+  margin-top: -18px;
 }
-.property-card .price{
-    color: var(--blackColor);
-    font-size: 16px;
-    margin-top: -12px;
+.property-card .price {
+  color: var(--blackColor);
+  font-size: 16px;
+  margin-top: -12px;
+  font-weight: 500;
 }
 
-.icon{
+.icon {
   font-size: 15px;
 }
 
-  /* .property-listing {
+/* .property-listing {
     display: block;
     flex-wrap: wrap;
     justify-content: space-around;
   } */
 
 .property-card:hover {
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.05);
-    box-shadow: 8px 25px 15px rgba(0, 0, 0, 0.2);
-    background-color: var(--quaternaryColor);
-    cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  /* transform: scale(1.); */
+  box-shadow: 0 0 10px rgba(0, 31, 63, 0.5);
+  background-color: var(--quaternaryColor);
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .sidebaritem {
-  width: 700px;   
+  width: 700px;
 }
 
 div#sidebartitle {
@@ -152,9 +152,11 @@ div#sidebartitle {
 /* detail property*/
 .mySlides {
   margin-top: 10px;
-  display:none;
+  display: none;
   width: 100vh;
   height: 500px;
+  box-shadow: 0 0 12px rgba(0, 31, 63, 0.8);
+  border-radius: 1.2%;
 }
 .w3-content {
   position: relative;
@@ -197,10 +199,9 @@ div#sidebartitle {
 }
 
 .detail-price {
-  color: #0288D1;
+  color: #0288d1;
   font-size: 30px;
 }
-
 
 .detail-room,
 .detail-address {
@@ -208,7 +209,7 @@ div#sidebartitle {
   display: inline-block;
   margin-right: 10px; /* Adjust the margin as needed */
 }
-.detail-description{
+.detail-description {
   padding-top: 15px;
 }
 /* agent box */
@@ -220,11 +221,13 @@ div#sidebartitle {
   width: 25vh;
 }
 .agent-img {
-  width: 10vh;
+  width: 100px;
+  max-height: 300px;
+  border-radius: 50%;
 }
 .contact {
- padding-top: 20px;
-} 
+  padding-top: 20px;
+}
 .email {
   background-color: var(--darkPrimaryColor);
   border: none;
