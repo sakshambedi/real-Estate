@@ -318,3 +318,22 @@ input[type="submit"]:hover {
 .cancel-button:hover {
   background-color: #2980b9; /* Darker blue on hover */
 }
+
+/* DropDown Feature */
+.dropdown-container {
+  text-align: center;
+  margin: 0 20px; /* Add margin between the dropdown containers */
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 5px;
+}
