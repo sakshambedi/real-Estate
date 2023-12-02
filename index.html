@@ -16,6 +16,7 @@
 
   <!-- JS Script Imports-->
   <script type="module" src="assets/js/properties-object.js" defer></script>
+  <script type="module" src="assets/js/search-bar.js" defer></script>
 
   <title>Real Estate</title>
 
@@ -40,21 +41,24 @@
         <a href="./pages/log_in.html">Sign In</a>
       </div>
     </div>
-    <!-- <div class="dropdown-content">
-
-      <a href="./">Settings</a>
-      <a href="#">Logout</a>
-    </div> -->
-    <!-- </nav> -->
   </div>
   <!-- Nav Bar Ends here  -->
 
-
   <main>
-    <h2>Welcome to the Marketplace! Very Welcome</h2>
+    <h2>Welcome to the Marketplace!</h2>
     <div class="search-box-wrapper">
-      <input class="searchBar" type="text" placeholder="Search by location..." />
-      <button href="#" class="search-box-button">&#128269;</button>
+      <div class="searchBar-wrapper">
+        <input
+          class="searchBar"
+          type="text"
+          id="searchInput"
+          placeholder="Search by Address, City or Neighborhood..."
+        />
+        <button class="search-box-button" onclick="searchRealEstate()">
+          &#128269;
+        </button>
+      </div>
+      <div id="searchResults"></div>
     </div>
     <div class="home">
       <div class="home-text">
@@ -76,6 +80,7 @@
 
   <section>
     <p>
+      <br />
       Introducing City Life Estate, your premier real estate agency in
       Winnipeg, MB. With our extensive knowledge of the local market and
       unwavering commitment to client satisfaction, we are here to help you
@@ -86,9 +91,10 @@
       process, ensuring a smooth and successful transaction. Trust City Life
       Estate to make your real estate journey a stress-free and rewarding
       experience.
+      <br />
     </p>
+    <br />
   </section>
-
   <hr />
 
   <!--Popular-Properties-Section-->
@@ -128,6 +134,7 @@
       <!-- Property Card 3 -->
 
       <div class="property-card">
+        <a href="./pages/detail.html">
         <img src="assets/imgs/property3.jpeg" alt="Property 3" />
         <a href="./pages/detail.html">
           <div class="information">
@@ -158,8 +165,7 @@
       <!-- Property Card 5 -->
       
       <div class="property-card">
-      <a href="./pages/detail.html">
-
+        <a href="./pages/detail.html">
         <img src="assets/imgs/property5.jpeg" alt="Property 5" />
           <div class="information">
             123 ABC Street <br> 
@@ -182,8 +188,6 @@
           </div>
       </div>
     </a>
-
-    </div>
   </section>
 
   <hr />
@@ -205,17 +209,6 @@
       goals!
     </p>
   </section>
-<!-- <script>
-  const information = document.querySelector('.property-card');
-  const anchorElement = document.createElement('a');
-  anchorElement.href = './pages/detail.html';
-  information.appendChild(anchorElement);
-
-
-
-</script> -->
-
-
   <!-- Footer here -->
   <div class="main-footer">
     <div class="useful-links">
