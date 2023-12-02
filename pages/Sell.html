@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Sell Page</title>
+  <link rel="stylesheet" href="./../assets/css/style.css">
+  <link rel="stylesheet" href="./../assets/css/Sell.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="./../assets/js/Sell.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Real Estate Sell Page</h1>
+    <form id="sellForm">
+      <div class="sub-div">
+        <label for="propertyImages">Upload Property Images</label>
+      </div>
+      <input type="file" id="propertyImages" accept="image/*" multiple required>
+
+      <div class="flex-container">
+        <div class="flex-item">
+          <label for="bedrooms">Number of Bedrooms</label>
+          <input class="user-input" type="text" id="bedrooms" placeholder="# of Bedrooms" required>
+        </div>
+        <div class="flex-item">
+          <label for="bathrooms">Number of Bathrooms</label>
+          <input type="text" id="bathrooms" placeholder="# of Bathrooms" required>
+        </div>
+        <div class="flex-item">
+          <label for="garage">Garage Space</label>
+          <input type="number" id="garage" step="1" placeholder="# of Garage" required>
+        </div>
+      </div>
+
+      <div class="flex-container">
+        <div class="flex-item-address">
+          <label for="address">Address</label>
+          <input type="text" id="address" placeholder="Street Address" required>
+        </div>
+      </div>
+
+
+      <div class="flex-container">
+        <div class="flex-item">
+          <label for="city">City</label>
+          <input type="text" id="city" placeholder="City" required>
+        </div>
+        <div class="flex-item">
+          <label for="country">Country</label>
+          <input type="text" id="country" placeholder="Country" required>
+        </div>
+        <div class="flex-item">
+          <label for="postal-code">Postal Code</label>
+          <input type="text" id="postal-code" placeholder="Postal Code" required>
+        </div>
+      </div>
+
+      <div class="submit-div">
+        <button type="button" onclick="submitForm()">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

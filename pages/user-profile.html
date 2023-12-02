@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://kit.fontawesome.com/e0862ae527.js" crossorigin="anonymous"></script>
+
+  <!-- CSS Imports -->
+  <link rel="stylesheet" href="./../assets/css/nav-bar.css" />
+  <link rel="stylesheet" href="./../assets/css/user-profile.css" />
+
+  <!-- JS Imports -->
+  <script src="./../assets/js/user-profile.js"></script>
+
+  <title>Real Estate User Profile</title>
+</head>
+
+<body>
+  <div class="header">
+    <a href="./../index.html"><img src="./../assets/logo/logo_no_bg.png" alt="Our Logo" class="logo"></a>
+
+    <ul class="nav_links">
+      <li><a href="/pages/map.html">Maps</a></li>
+      <li><a href="/pages/compare.html">Saves/Compare</a></li>
+      <li><a href="/pages/Sell.html">Sell</a></li>
+    </ul>
+
+    <div class="user-icon">
+      <img class="user-account-svg" src="./../assets/icons/user.svg">
+      <div class="dropdown-content">
+        <!-- <a href="#">Preferences</a> -->
+        <a href="./user-profile.html">Settings</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+    <!-- <div class="dropdown-content">
+      <a href="#">Preferences</a>
+      <a href="#">Settings</a>
+      <a href="#">Logout</a>
+    </div> -->
+  </div>
+
+  <div class="container">
+    <div class="sidebar-nav">
+      <header>User Profile Section</header>
+      <div class="each-button">
+
+        <button onclick="showSection('userProfileSection')" class="side-bar-button"> <i
+            class="fa-solid fa-user"></i>User
+          Profile</button>
+      </div>
+
+      <div class="each-button">
+
+        <button onclick="showSection('preferenceSettingsSection')" class="side-bar-button"> <i
+            class="fa-solid fa-heart"></i>Preference Settings</button>
+      </div>
+
+      <div class="each-button">
+        <button onclick="showSection('adminSection')" class="side-bar-button"><i class="fa-solid fa-lock"></i>Admin
+          Section</button>
+      </div>
+
+      <button class="logout-button">
+        <i class="fas fa-sign-out"></i> Logout
+      </button>
+    </div>
+
+    <div class="content">
+      <section id="userProfileSection">
+        <!-- <h2>User Information</h2> -->
+        <div id="Userform">
+          <form id="userInfo">
+            <div id="profileImageContainer" onclick="openImageSelector()">
+              <img id="profileImage" src="http://hci.cs.umanitoba.ca/assets/images/people/_bio/New_Jersey_Patrick.jpg"
+                alt="Profile Image">
+            </div>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" style="display: none">
+
+            <div class="flex-container">
+              <div id="form-item">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name">
+              </div>
+              <div id="form-item">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name">
+              </div>
+            </div>
+
+            <div class="flex-container">
+              <div id="form-item">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+              </div>
+              <div id="form-item">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+              </div>
+            </div>
+
+            <div class="flex-container">
+
+              <div id="form-item">
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}">
+              </div>
+              <div id="form-item">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+              </div>
+            </div>
+
+            <!-- <div class="flex-container">
+              
+            </div> -->
+
+            <input type="submit" value="Save Changes">
+          </form>
+        </div>
+      </section>
+
+      <section id="preferenceSettingsSection">
+        <h2>Preference Settings Section</h2>
+      </section>
+
+      <section id="adminSection">
+        <h2>Admin Section</h2>
+        <div class="delete-section">
+          <h4>Delete Account</h4>
+          <button id="delete-account-button" onclick="showConfirmation()">Delete Account</button>
+        </div>
+
+        <div id="confirmation-modal">
+          <div id="confirmation-box">
+            <p>Please type in the username: "<span id="username-placeholder"></span>" to confirm that you are deleting
+              this
+              account</p>
+            <input type="text" id="confirmation-input">
+            <div class="button-div">
+              <button onclick="deleteAccount()" class="confirm-button">Confirm Delete</button>
+              <button onclick="hideConfirmation()" class="cancel-button">Cancel</button>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    background-color: #f4f2f2;
+}
+
+.heading {
+    margin-left: 2rem;
+}
+
+.top {
+    font-size: 3rem;
+    /* height: 7rem; */
+    /* background-color: red; */
+    /* background-color: #fff; */
+    /* border-bottom: var(--line); */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.container {
+    max-width: 156rem;
+    margin: 8rem auto;
+    /* background-color: #f4f2f2; */
+    min-height: 50rem;
+    zoom: 80%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    /* background-color: yellowgreen; */
+    display: flex;
+    margin-top: 2rem;
+    align-items: stretch;
+    box-shadow: 0 0 10px rgba(0, 31, 63, 0.5);
+    border:1px solid #ccc;
+}
+
+.number {
+    /* background-color: burlywood; */
+    width: 20rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12em;
+    background-color: #3282b8;
+}
+
+
+.info {
+    /* flex-wrap: wrap; */
+    flex: 1;
+    /* background-color: blue; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bbe1fa;
+}
+
+.details {
+    display: flex;
+    /* flex-grow: 1; */
+    /* justify-content: space-between; */
+}
+
+.house {
+    /* background-color: slateblue; */
+    width: 75rem;
+    margin-right: auto;
+}
+
+.agent {
+    /* background-color: pink; */
+    /* justify-content: space-between; */
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.house-img {
+    /* margin: -10px 0 0px -20px; */
+    margin-left: 1rem;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    width: 350px;
+    height: 230px;
+    box-shadow: 0 0 10px rgba(0, 31, 63, 0.8);
+    border-radius: 14px;
+}
+
+
+.house-properties {
+    padding-left: 4rem;
+}
+
+.agent-properties {
+    padding-left: 4rem;
+    /* padding-right: 1rem; */
+}
+
+p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.agent-name{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+}
+
+.addr {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+}
+
+.agent-img{
+    /* padding: 10px; */
+    width: 220px;
+    height: 230px;
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+
+    /* object-fit: contain;
+
+    /* margin-left: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 350px;
+    height: 230px; */
+    border-radius: 50%;
+}
+
+.detail-room {
+    font-size: 20px;
+}
+
+img {
+    object-fit: cover;
+}

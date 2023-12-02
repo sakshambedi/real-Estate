@@ -1,0 +1,375 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --darkPrimaryColor: #001f3f;
+  --secondaryColor: #0f4c75;
+  --tertiaryColor: #3282b8;
+  --quaternaryColor: #bbe1fa;
+  --lightPrimaryColor: #ebe9e5;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+
+  --house-color: #0288d1;
+}
+
+html, 
+body {
+    height: 90%;
+}
+
+
+/* Combine */
+.combine {
+  height: 100%;
+  width: 100%;
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  padding-top: 20px;
+  overflow-x: hidden;
+}
+
+/* Control the left side */
+.left {
+  margin-top: 10vh;
+  left: 0;
+  background-color: #f4f4f4; /* Neutral background color */
+  border-right: 2px solid #000; /* Dark black line to separate from the right side */
+}
+
+.left::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.left {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+/* Control the right side */
+.right {
+  margin-top: 10vh;
+  right: 0;
+  /* background-color: #f4f4f4; Neutral background color */
+}
+
+.right::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.right {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  margin-top: -50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 300px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 solid --lightPrimaryColor;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 40rem;
+  height: 26rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(28, 28, 28, 0.81);
+}
+
+.image-nav-button {
+  position: absolute;
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 50px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.image-nav-button:first-child {
+  left: 0;
+  margin-left: -38px;
+}
+
+.image-nav-button:hover {
+  color: #31b0d5; /* Highlight color on hover */
+}
+
+.like-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Set to 50% for a perfect circle */
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border-radius: 50%;
+  border: 2px solid black;
+  font-size: 30px;
+  cursor: pointer;
+  transition: white 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+}
+
+.like-button-container {
+  position: fixed;
+  bottom: 14%; /* Adjust the distance from the bottom as needed */
+  left: 92%; /* Adjust the distance from the right as needed */
+  z-index: 1; /* Adjust the z-index if needed to ensure it appears above other elements */
+}
+
+.like-button:hover {
+  background-color: rgb(255, 170, 170);
+  color: rgb(232, 0, 0);
+}
+
+.like-button1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Set to 50% for a perfect circle */
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border-radius: 50%;
+  border: 2px solid black;
+  font-size: 30px;
+  cursor: pointer;
+  transition: white 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+}
+
+.like-button-container1 {
+  position: fixed;
+  bottom: 14%; /* Adjust the distance from the bottom as needed */
+  left: 43%; /* Adjust the distance from the right as needed */
+  z-index: 1; /* Adjust the z-index if needed to ensure it appears above other elements */
+}
+
+.like-button1:hover {
+  background-color: rgb(255, 170, 170);
+  color: rgb(232, 0, 0);
+}
+
+
+/* House images */
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  background-color: var(--darkPrimaryColor);
+  color: white;
+  cursor: pointer;
+  margin-top: 18px;
+}
+
+.button.left {
+  left: 0;
+}
+
+.button.right {
+  right: 0;
+}
+
+.button.leftTwo {
+  left: 0;
+}
+
+.button.rightTwo {
+  right: 0;
+}
+
+.property-des {
+  height: auto;
+  display: flex;
+  font-size: 20px;
+  text-shadow: #000;
+  font-weight: bolder;
+}
+
+.detail-description {
+  padding-top: 10px;
+  border-radius: 7px;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px inset,
+    rgba(0, 0, 0, 0.1) 0px -1px 0px inset, rgba(0, 0, 0, 0.1) 0px 0px 1px inset;
+}
+
+/*Share Button*/
+.share-button {
+  position: fixed;
+  bottom: 10%;
+  left: 43%;
+  z-index: 1;
+  background-color: #31b0d5; /* Choose a color that matches your website theme */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.share-button:hover {
+  background-color: #0f4c75; /* Change color on hover if desired */
+}
+
+/* Optional: Adjust the styles for a cleaner look */
+.share-button::before {
+  content: ""; /* Unicode character for a share icon, adjust as needed */
+  margin-right: 5px;
+}
+
+/* Review Section */
+.review-section {
+  margin-top: 30px;
+  border-top: 2px solid #001f3f;
+  padding-top: 20px;
+}
+
+#userReviews {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 15px;
+  background-color: #3282b8;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #001f3f;
+}
+
+.user-review {
+  border-bottom: 1px solid #dcdcdc;
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+.user-review:last-child {
+  border-bottom: none;
+}
+
+.detail-container {
+  padding: 20px;
+}
+
+.detail-price {
+  font-size:xx-large; /* Increased font size for the price */
+  font-weight: bold; /* Added bold font weight for emphasis */
+  color: var(--house-color); /* Blue color for the price */
+  margin: 20px;
+}
+
+.detail-address {
+  padding-top: 20px;
+  font-size: x-large; /* Increased font size for the address */
+  color: var(--secondaryColor); /* Blue color for the address */
+  font-weight: bold;
+}
+
+/* .detail-room {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  color: #0f4c75;
+} */
+
+.fa-solid {
+  margin-right: 5px;
+}
+
+.detail-description {
+  margin-top: 15px;
+  line-height: 1.5;
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.51);
+  text-align: left;
+}
+
+.property-des{
+  margin-bottom: 10px;
+}
+
+.property-sum {
+  /* margin-top: 30px; */
+  margin-bottom: 15px;
+  margin-left: 10px;
+  height: auto;
+  display: flex;
+  font-size: 20px;
+  text-shadow: #000;
+  font-weight: bolder;
+}
+
+.property-sum-details {
+  margin-top: 15px;
+  line-height: 1.5;
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.51);
+  text-align: left;
+  border-radius: 7px;
+  padding: 15px;
+}
+
+/* property summary */
+
+.property-sum-details table{
+  table-layout: autos;
+  width: 100%;
+}
+
+.main-footer{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:99;
+}

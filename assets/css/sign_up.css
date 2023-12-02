@@ -1,0 +1,399 @@
+*{box-sizing: border-box; -webkit-box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; font: 16px/1.3 sans-serif; background-color: #24252A;}
+
+/*
+PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+http://stackoverflow.com/a/34696029/383904
+*/
+
+.CSSgal {
+	position: relative;
+	overflow: hidden;
+	height: 80%; /* Or set a fixed height */
+	width: 60%;
+	min-width: 750px;
+	border-radius: 30px;
+}
+
+/* SLIDER */
+
+.CSSgal .slider {
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+}
+
+/* SLIDES */
+
+.CSSgal .slider > * {
+	overflow: hidden;
+	font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background: none 50% no-repeat;
+	background-size: cover;
+	padding: 5%;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+	z-index: 1;
+	bottom: 0;
+
+	white-space: nowrap;
+	align-items: center;
+
+}
+
+.CSSgal .prevNext > div+div {
+	visibility: hidden; /* Hide all but first P/N container */
+}
+
+.CSSgal .prevNext > div {
+	position: relative;; /* Hide all but first P/N container */
+}
+
+.CSSgal .prevNext a {
+
+	background: rgba(54, 142, 255, 0.5)	;
+	position: absolute;
+	min-width: 30px;
+
+	text-align: center;
+
+	transition: background 0.3s;
+	-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+
+	padding-left: 9px;
+	padding-right: 9px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 25px;
+
+	font-size: 18px;
+	font-weight: bolder;
+	color: #fefefe;
+	text-decoration: none;
+}
+.CSSgal .prevNext a:hover {
+	/* opacity: 1; */
+	/* background: rgba(54, 142, 255, 1)	; */
+	background: rgb(54, 142, 255, 1)	;
+	transition: background 0.3s;
+}
+/* .CSSgal .prevNext a+a {
+	left: auto;
+	right: 0;
+} */
+.right {
+	right: 30px;
+}
+.left {
+	left: 30px;
+}
+.done {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+.stealth {
+	visibility: hidden;
+}
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+	z-index: 2;
+	text-align: center;
+	white-space: nowrap;
+}
+.CSSgal .bullets > a {
+	display: inline-block;
+
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 190px;
+	text-align: center;
+	background: rgba(54, 142, 255, 1);
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+	margin: 0 7px;
+	border-radius: 25px;
+
+	color: #fefefe;
+	text-decoration: none;
+
+	font-size: 18px;
+	font-weight: bold;
+}
+.CSSgal .bullets > a+a {
+	background: rgba(54, 142, 255, 0.5); /* Dim all but first */
+}
+.CSSgal .bullets > a:hover {
+	background: rgba(54, 142, 255, 0.7) !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.CSSgal >s:target ~ .bulletContainer .bullets >* {      background: rgba(54, 142, 255, 0.5);}
+/* ACTIVE */
+#s1:target ~.bulletContainer .bullets >*:nth-child(1) {background: rgba(54, 142, 255,   1);}
+
+#s2:target ~ .bulletContainer .bullets >*:nth-child(2) {background: rgba(54, 142, 255,   1);}
+#s2:target ~.bulletContainer .bullets >*:nth-child(1) {background: rgba(54, 142, 255,   1);}
+
+#s3:target ~ .bulletContainer .bullets >*:nth-child(3) {background: rgba(54, 142, 255,   1);}
+#s3:target ~ .bulletContainer .bullets >*:nth-child(2) {background: rgba(54, 142, 255,   1);}
+#s3:target ~ .bulletContainer .bullets >*:nth-child(1) {background: rgba(54, 142, 255,   1);}
+
+
+#s4:target ~ .bulletContainer .bullets >*:nth-child(4) {background: rgba(54, 142, 255,   1);}
+#s4:target ~ .bulletContainer .bullets >*:nth-child(3) {background: rgba(54, 142, 255,   1);}
+#s4:target ~ .bulletContainer .bullets >*:nth-child(2) {background: rgba(54, 142, 255,   1);}
+#s4:target ~ .bulletContainer .bullets >*:nth-child(1) {background: rgba(54, 142, 255,   1);}
+/* More slides? Add here more rules */
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal >s:target ~ .bulletContainer .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#s1:target ~ .bulletContainer .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .bulletContainer .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .bulletContainer .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .bulletContainer .prevNext >*:nth-child(4) {visibility: visible;}
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER! 
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal{
+	color: #fff;	
+	text-align: center;
+}
+
+
+.CSSgal .slider h2 {
+	margin-top: 40vh;
+	font-weight: 200;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 3em;
+}
+
+
+/* Most outer container */
+.CSSgal_container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	/* min-width: 1000px; */
+	height: 100%;
+	min-height: 900px;
+	background-color: #24252A;
+}
+
+
+
+/* container Inside each slide */
+.CSSgal .slider .container
+ {
+	position: relative;
+	display: grid;
+	align-content: center;
+	height: 90%;
+	width: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.singleColumn{
+	justify-items: center;
+}
+
+
+
+/* Rows */
+.slideTitle {
+	height: 5%;
+	color: #24252A;
+	font-size:35px;
+	font-weight: bolder
+	/* padding-bottom: 40px; */
+}
+
+.rowSingleColumn {
+	width: 450px;
+}
+
+.flexRow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: space-between;
+}
+.flexRow div {
+	padding-bottom: 5px;
+	
+}
+.flexRow div a {
+	font-weight: bold;
+	user-select: none;
+	color: #55575e;
+	text-align: center;
+}
+.fromTo{
+	align-items: flex-end;
+}
+.dynamicRow {
+ /* Dont remove this - subclass for dynamic direction */	
+}
+
+
+
+.flexRowElement {
+	/* padding: 15px; */
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 15px;
+	min-width: 100px;
+}
+
+.emptyRow {
+	height: 40px;
+}
+.emptyRow2 {
+	height: 40px;
+}
+
+.elementTitle {
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #24252A;
+	text-align: left;
+}
+.blank {
+	user-select: none;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #24252A;
+	text-align: left;
+}
+
+
+.inputForm {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	font-size: 16px;
+	color: #696969;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #24252A;
+	transition: border-bottom 0.9s;
+	/* min-width: 500px; */
+}
+.inputForm:focus {
+	color: #24252A;
+	border-bottom: 2px solid #368EFF;
+	transition: border-bottom 0.9s;
+}
+.inputForm:focus::placeholder {
+	color: #aeaeae;
+	transition: color 0.7s;
+}
+.column_three {
+	min-width: 100px;
+}
+.column_single {
+	width: 100%-10px
+}
+
+
+
+.CSSgal .bulletContainer {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	align-items: center;
+	padding: 4% 0;
+}
+
+
+
+
+/* Auto Suggestion */
+ul {
+	list-style: none;
+}
+.list {
+	position: absolute;
+	width: 100%;
+	background-color: #8d3232;
+	border-radius: 0 0 5px 5px;
+}
+.list-items {
+	padding: 10px 5px;
+}
+.list-items:hover {
+	background-color: #dddddd;
+}
+
+
+@media (max-width: 1300px) {
+	.dynamicRow {
+	  flex-direction: column;
+	}
+	.emptyRow {
+		height: 20px;
+	}
+	.column_three, .column_single {
+		padding-top: 10px;
+	}
+  }
+
+  @media (max-width: 1600px) {
+	.dynamicRow {
+	  flex-direction: column;
+	}
+	.emptyRow {
+		height: 20px;
+	}
+	.column_three, .column_single {
+		padding-top: 10px;
+	}
+	.CSSgal .bullets > a {
+		width: 135px;
+		font-size: 16px;
+	}
+	.CSSgal .prevNext a {
+		font-size: 16px;
+	}
+  }

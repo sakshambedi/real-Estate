@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Importing Scripts that are external and aren't meant to be modified at all -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://kit.fontawesome.com/e0862ae527.js" crossorigin="anonymous"></script>
+
+  <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
+
+  <!-- CSS Imports -->
+  <link rel="stylesheet" href="../assets/css/nav-bar.css" />
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/footer.css" />
+  <link rel="stylesheet" href="../assets/css/detail.css" />
+
+  <!-- JS Script Imports-->
+  <script type="module" src="../assets/js/properties-object.js" defer></script>
+
+  <title>Real Estate</title>
+
+</head>
+
+<body>
+  <div class="header">
+        <a href="../index.html"><img src="../assets/logo/logo_no_bg.png" alt="Our Logo" class="logo"></a>
+        <!-- <nav class="user-nav"> -->
+        <ul class="nav_links">
+          <!-- <li><a href="pages/Dashboard.html">Dashboard</a></li> -->
+          <li><a href="map.html">Maps</a></li>
+          <li><a href="compare.html">Saves/Compare</a></li>
+          <li><a href="Sell.html">Sell</a></li>
+        </ul>
+        <!-- <a class="cta" href="pages/user-profile.html"><img class="user-account-svg" src="./assets/icons/user.svg" /></a> -->
+        <div class="user-icon">
+          <a href="user-profile.html"><img class="user-account-svg" src="../assets/icons/user.svg"></a>
+          <div class="dropdown-content">
+            <a href="#">Preferences</a>
+            <a href="#">Settings</a>
+            <a href="log_in.html">Sign In</a>
+          </div>
+        </div>
+        <div class="dropdown-content">
+          <a href="#">Preferences</a>
+          <a href="#">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+        <!-- </nav> -->
+  </div>
+
+
+  <div class="mainContiner">
+
+    <div class="titleflexbox">
+      <div class="title">
+        <h1>919 Manitoba Avenue</h1>
+      </div>
+      <div class="shareDiv">
+        <i font-size=30px class="fa-solid fa-share-nodes" style="color: #5d606e;"></i>
+      </div>
+    </div>
+
+    <div class="picturesGroupContianer">
+      <div class="bigPic">
+        <img src="../assets/housing images/house15/house15_1.jpeg">
+      </div>
+      <div class="bigPic">
+        <img src="../assets/housing images/house15/house15_2.jpeg">
+      </div>
+      <div class="gridForsmallpic">
+        <div class="smallPic">
+          <img src="../assets/housing images/house15/house15_3.jpeg">
+        </div>
+        <div class="smallPic">
+          <img src="../assets/housing images/house15/house15_5.jpeg">
+        </div>
+      </div>
+
+    </div>
+    
+
+    <div class="details">
+
+      <div class="leftColm">
+        <div class="cardBlock">
+          <div class="table">
+            <div class="leftTableCell">
+              <a>919 Manitoba Avenue, Winnipeg, Manitoba, Canada</a>
+            </div>
+            <div class="rightTableCell1">
+              <i class="fa-solid fa-share-nodes" font-size=3px style="color: #24252A;"></i>
+              <i class=" fa-solid fa-bookmark " font-size=50px style="color: #368EFF;"></i>
+            </div>
+          </div>
+          <div class="table">
+            <div class="leftTableCell2">
+              <h2>$120,000</h2>
+            </div>
+            <div class="rightTableCell2">
+              3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i>  4 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="halfCOlm">
+          <div class="hlafColmNest">
+            <div class="cardBlock flexit">
+              <h1>Property Summary</h1>
+              <table>
+                <tr>
+                  <td style="text-align: left; padding: 10px;"><div class="label">Beds</div> 1</br></td>
+                  <td style="text-align: left; padding: 10px;"><div class="label">Heat</div> Baseboard Heaters</br></td>
+                  <td style="text-align: left; padding: 10px;"><div class="label">Amenities</div> Shopping</br></td>
+                </tr>
+                <tr>
+                  <td style="text-align: left;padding: 10px;"><div class="label">Bathrooms</div> 1</br></td>
+                  <td style="text-align: left;padding: 10px;"><div class="label">Utility</div> Water</br></td>
+                  <td style="text-align: left;padding: 10px;"><div class="label">Property Size</div> 674 sqft</br></td>
+                </tr>
+                <tr>
+                  <td style="text-align: left;padding: 10px;"><div class="label">Cool</div> Wall Unit</br></td>
+                  <td style="text-align: left;padding: 10px;"><div class="label">Floor</div> Carpet, Other</br></td>
+                  <td style="text-align: left;padding: 10px;"><div class="label">Parking</div> None, Other, Rear</br></td>
+                </tr>
+              </table>
+            </div> 
+
+            <div class="cardBlock flexit">
+              <img height=100% width=100% src="../assets/imgs/calculater.png">
+            </div>
+          </div>
+
+          <div class="middlespace"></div>
+          
+
+          <div class="hlafColmNest">
+            <div class="cardBlock flexit">
+              <h1>Reviews & Comments</h1>
+              <!-- <div class="comment">
+                <div class="commentFlexBox">
+                  <i class="fa-solid fa-user" font-size= 30px style="color: #558ef5;"></i>
+                  <h1>Timmy Brown</h1>
+                </div>
+              </div> -->
+
+              
+              <div class="commentFlexBox">
+                <i class="fa-solid fa-user" font-size= 20px style="color: #558ef5;"></i>
+                <div class="hlafColmNest">                
+                  <div class="comment">
+                    <h1>Dang</h1>
+                    <a>I want this house</a>
+                  </div>
+                  <div class="date">2023/05/20</div>
+                </div>
+              </div>
+              <div class="commentFlexBox">
+                <i class="fa-solid fa-user" font-size= 20px style="color: #558ef5;"></i>
+                <div class="hlafColmNest">                
+                  <div class="comment">
+                    <h1>Jun</h1>
+                    <a>Lovely place. Good neighberhood</a>
+                  </div>
+                  <div class="date">2023/06/07</div>
+                </div>
+              </div>
+              <div class="commentFlexBox">
+                <i class="fa-solid fa-user" font-size= 20px style="color: #558ef5;"></i>
+                <div class="hlafColmNest">                
+                  <div class="comment">
+                    <h1>Danieal</h1>
+                    <a>You might want to have good shoes. The bus stop is bit far away about 10min walk</a>
+                  </div>
+                  <div class="date">2023/07/11</div>
+                </div>
+              </div>
+              <div class="commentFlexBox">
+                <i class="fa-solid fa-user" font-size= 20px style="color: #558ef5;"></i>
+                <div class="hlafColmNest">                
+                  <div class="comment">
+                    <h1>Jackson</h1>
+                    <p>Can you please contace me?</p>
+                    <p>You can email me jack8@citylife.ca</p>
+                  </div>
+                  <div class="date">2023/08/08</div>
+                </div>
+              </div>
+              <div class="commentFlexBox">
+                <i class="fa-solid fa-user" font-size= 20px style="color: #558ef5;"></i>
+                <div class="hlafColmNest">                
+                  <div class="comment">
+                    <h1>CityGuy007</h1>
+                    <a>I rememember seeing this house while driving. Nice neighberhood indeed.</a>
+                  </div>
+                  <div class="date">2023/08/14</div>
+                </div>
+              </div>
+              <div class="commentFlexBox">
+                <i class="fa-solid fa-user" font-size= 20px style="color: #558ef5;"></i>
+                <div class="hlafColmNest">                
+                  <div class="comment">
+                    <h1>Andrew</h1>
+                    <a>You can contact one of the realtor to view the house. They were very nice.</a>
+                  </div>
+                  <div class="date">2023/12/01</div>
+                </div>
+              </div>
+
+              <div class="property-section review-section">
+                <textarea
+                  id="reviewInput"
+                  placeholder="Write your review..."
+                ></textarea>
+                <div> <button onclick="submitReview()">Submit</button> </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+
+      <div class="rightColm">
+        <div class="cardBlock">
+          <h1>Craig Voli</h1><br>
+          <i class="fa-solid fa-phone" style="color: #24252A;"></i>
+          <a>204-558-7777</a> <br>
+          <div class="emptyLine"></div>
+          <i class="fa-solid fa-envelope" style="color: #24252A;"></i>
+          <a>voliboli@citylife.ca</a><br><br>
+          <a>"Start your new life with Voli"</a>
+        </div>
+        <div class="cardBlock">
+          <h1>Skillian Murfy</h1><br>
+          <i class="fa-solid fa-phone" style="color: #24252A;"></i>
+          <a>204-778-7932</a> <br>
+          <div class="emptyLine"></div>
+          <i class="fa-solid fa-envelope" style="color: #24252A;"></i>
+          <a>theMurf@citylife.ca</a><br><br>
+          <a>"In HCI we trust"</a>
+        </div>
+        <div class="cardBlock">
+          <h1>Justin Piero</h1><br>
+          <i class="fa-solid fa-phone" style="color: #24252A;"></i>
+          <a>204-787-5492</a> <br>
+          <div class="emptyLine"></div>
+          <i class="fa-solid fa-envelope" style="color: #24252A;"></i>
+          <a>jusitce@citylife.ca</a><br><br>
+          <a>"Justice from above. God save us all"</a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+ 
+
+
+  <!-- Footer here -->
+  <div class="main-footer">
+    <div class="useful-links">
+      <h4>Useful Links</h4>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#blog">Blog</a>
+    </div>
+    <div class="newsletter">
+      <h4>Newsletter</h4>
+      <form><input type="email" placeholder="Your Email ID" required>
+        <br>
+        <button type="submit">Subscribe Now</button>
+      </form>
+    </div>
+    <div class="contact">
+      <h4>Contact</h4>
+      <p>Abc Address</p>
+      <p>DEF City, R3T3N8, Canada</p>
+      <div class="social-icons">
+        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        <i class=" fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+        <i class="fa-regular fa-x" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Footer Ends Here -->
+  <script>
+    // Your existing script for image slideshow and reviews
+
+    // Function to display a confirmation pop-up when submitting a review
+    function submitReviewConfirmation(callback) {
+      const isConfirmed = confirm(
+        "Are you sure you want to submit this review?"
+      );
+
+      if (isConfirmed) {
+        callback(); // If confirmed, execute the callback function
+      }
+    }
+
+    // Function to submit a review
+    function submitReview() {
+      submitReviewConfirmation(() => {
+        const userReviewsContainer = document.getElementById("userReviews");
+        const reviewInput = document.getElementById("reviewInput");
+        const noReviewsMessage = document.getElementById("noReviewsMessage");
+        const reviewText = reviewInput.value.trim();
+
+        if (reviewText !== "") {
+          // Create a new review element
+          const reviewElement = document.createElement("div");
+          reviewElement.className = "user-review";
+          reviewElement.textContent = reviewText;
+
+          // Append the review to the reviews container
+          userReviewsContainer.appendChild(reviewElement);
+
+          // Clear the input field after submission
+          reviewInput.value = "";
+          noReviewsMessage.style.display = "none";
+        }
+      });
+    }
+</script>
+</body>
+
+</html>

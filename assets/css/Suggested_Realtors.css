@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #24252A;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 10px 0px 20px 25px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.realtor-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+
+.realtor-card {
+    /* display: flex; */
+    flex: 0 0 45%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin:5px;
+    width: 50%;
+}
+
+.realtor-image-container {
+    width: 100%;
+    /* position: relative; */
+    overflow: hidden;
+    align-self: center;
+    
+}
+
+.realtor-image {
+    width: 150px;
+    height:150px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #cdcdcd;
+}
+
+
+.realtor-details {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.realtor-details h2 {
+    margin: 0px 0px 10px 0px;
+    text-align: left;
+    
+}
+
+.realtor-details p {
+    margin: 5px 0;
+    text-align: left;
+}
+
+.realtor-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    
+}
+
+.realtor-button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.realtor-button:hover {
+    background-color: #ddd;
+}

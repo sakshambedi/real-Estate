@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "userID": 1,
+            "user_name": "user_good",
+            "user_email": "useremail@test.ca",
+            "user_password": "pa$$word",
+            "phone_number": "204-123-1233",
+            "profile_picture": "http://hci.cs.umanitoba.ca/assets/images/people/_bio/New_Jersey_Patrick.jpg",
+            "prefrences": {
+                "Bedroom": 4,
+                "Bathroom": 2
+            }
+        }
+    ]
+}

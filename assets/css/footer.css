@@ -1,0 +1,70 @@
+
+.main-footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #24252a;
+    display: flex;
+    flex-direction: row;
+    padding: 25px 10%;
+    color: #efefef;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.main-footer div{
+    text-align: center;
+}
+
+.main-footer h4{
+    font-weight: 200;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.useful-links a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom : 10px;
+    font-size: 14px;
+
+}
+
+.contact p{
+    font-size: 14px;
+
+}
+
+form input{
+    width: 300px;
+    height:45px;
+    border-radius: 50px;
+    text-align: center; 
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    outline: none; 
+    border: none;
+
+}
+
+form button{
+    background: transparent; 
+    border: 2px solid #188580;
+    color: #fff;
+    border-radius: 30px; 
+    padding: 10px 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.social-icons{
+    margin-top: 20px;
+}
+
+.social-icons i{
+    font-size: 20px;
+    height: 20px;
+    margin: 10px;
+    cursor:pointer;
+}

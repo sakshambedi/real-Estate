@@ -1,0 +1,320 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar-nav {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  width: 30vh;
+  margin: 0px 0px 0px 0px;
+  height: 92vh;
+  border-right: 2px solid #ddd;
+}
+
+
+.each-button {
+  margin: 5px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.each-button i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+
+.sidebar-nav .side-bar-button {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 10px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0px 0px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 100%; /* Button takes full width */
+  border-bottom: 1px solid #001f3f;
+  border-left: 1px solid #f8f9fa;
+  border-right: 1px solid #f8f9fa;
+}
+
+.sidebar-nav .side-bar-button i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.sidebar-nav .side-bar-button .fa-heart {
+  font-size: 17.5px;
+  margin-left: -2px;
+}
+.sidebar-nav .sidebar-button.active {
+  background-color: #28a745 !important; /* Override other styles */
+  color: #fff; /* White text color */
+}
+
+.sidebar-nav button:hover {
+  background-color: #e9ecef; /* Lighter gray on hover */
+}
+
+
+.logout-button {
+  background-color: #001f3f; /* Navy blue color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  /* transition: background-color 0.3s; */
+  display: flex;
+  align-items: center;
+  margin-top: 18vh; 
+}
+
+.logout-button:hover {
+  background-color: #0959a9; /* Darker navy blue on hover */
+}
+
+.logout-button i {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 18px; /* Adjust the icon size as needed */
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+header {
+  color: black;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 10px;
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+}
+
+section {
+  display: none;
+}
+
+#userProfileSection {
+  display: block;
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  margin: 50px 0px 40px 20px;
+}
+
+h4{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+  margin: 10px 0px 7.5px 20px;
+}
+
+
+
+#Userform {
+  margin: 20px auto;
+  padding: 20px;
+  width: max-content;
+}
+
+#profileImageContainer {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+#profileImage {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+#profileImage:hover {
+  transform: scale(1.1);
+}
+
+#form-item {
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.flex-container #form-item {
+  flex: 0 0 calc(50% - 10px);
+}
+
+#form-item label {
+  text-align: left;
+}
+
+#form-item input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #001f3f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 30px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0f4c75;
+}
+
+#profileImageContainer {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0px auto; /* Added spacing between the image and the form, and centered horizontally */
+  box-shadow: 0 0 10px rgba(0, 31, 63, 0.5); /* Added a diffused glow effect with navy blue color */
+  margin-bottom: 40px;
+}
+
+#profileImage {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+#profileImage:hover {
+  transform: scale(1.1);
+}
+
+#delete-account-button {
+  background-color: #e74c3c; /* Red color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0px 0px 40px 20px;
+}
+
+
+
+#delete-account-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+#confirmation-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#confirmation-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 400px; /* Adjust the width as needed */
+}
+
+#confirmation-box p {
+  margin-bottom: 20px;
+}
+
+.button-div{
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 400px; /* Adjust the width as needed */
+  justify-content: center;
+  align-items: center;
+}
+
+#confirmation-input {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#confirmation-box button {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  cursor: pointer;
+} 
+
+#button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.confirm-button {
+  background-color: #e74c3c; /* Red color */
+  color: #fff; /* White text color */
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.confirm-button:hover {
+  background-color: #c0392b; 
+}
+
+.cancel-button {
+  background-color: #ecf0f1; /* Light gray color for cancel button */
+  color: #333; /* Dark text color for cancel button */
+}
+
+.cancel-button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}

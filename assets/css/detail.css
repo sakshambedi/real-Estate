@@ -1,0 +1,282 @@
+body { min-width: 1460px; 
+color: #24252A; }
+
+.mainContiner {
+    margin: auto;
+    max-width: 1460px;
+    min-width: 1360px;
+    position: relative;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.picturesGroupContianer {
+    display: flex;
+    margin-bottom: 15px;
+    position: relative;
+    height: 455px;
+}
+
+.bigPic {
+    flex: 1;
+    overflow: hidden;
+    justify-content: center;
+    margin-right: 15px;
+}
+.bigPic img {
+
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-height: 475px;
+}
+
+.gridForsmallpic {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 330px);
+    grid-gap: 15px;
+    width: 330px;
+}
+
+.smallPic {
+
+    position: relative;
+    display: inline-grid;
+    align-items: center;
+
+}
+
+.smallPic img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    max-height: 220px;
+}
+
+
+.mainTab {
+    width: 100%;
+}
+
+
+
+.details {
+    display: flex;
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; */
+    flex-direction: row;
+    /* justify-content: center; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rightColm{
+    width: 22.5%;
+    vertical-align: top;
+}
+
+.leftColm{
+    width: calc(79.5% - 30px);
+    padding-right: 15px;
+}
+
+.halfCOlm{
+    display: flex;
+    /* align-items: flex-start; */
+}
+.middlespace{
+    width: 15px;
+}
+
+.hlafColmNest{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.date{
+    width: 90%;
+    text-align: right;
+    font-size: 10px;
+    
+    margin-bottom: 5px;
+}
+
+
+.cardBlock{
+    border: 1px solid #cdcdcd;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fefefe;
+    position: relative;   
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.cardBlock h1{
+    font-size: 20px;
+}
+.emptyLine{
+    height: 7px;
+}
+.flexit{
+    /* flex: 1; */
+    width: 100%;
+}
+.review_comment{
+     height: 1000px;
+}
+.flexit table{
+    table-layout: auto;
+    width: 100%;
+}
+.flexit h1{
+    padding: 10px;
+    padding-bottom: 15px;
+}
+.label {
+    font-weight: bold !important;
+    padding-bottom: 5px;
+}
+
+
+.bookmark{
+    display: inline-block;
+    text-align: center;
+    margin-left: 15px;
+    vertical-align: top;
+}
+
+
+.table {
+    display: table;
+    width: 100%;
+}
+.leftTableCell {
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+.leftTableCell2 {
+    display: table-cell;
+    text-align: left;
+    vertical-align: bottom;
+}
+.leftTableCell a{
+    font-size: 23px;
+}
+.rightTableCell1 {
+    display: table-cell;
+    text-align: right;
+    vertical-align: top;
+}
+.rightTableCell2 {
+    display: table-cell;
+    text-align: right;
+    vertical-align: top;
+}
+.rightTableCell2 svg{
+    margin-top: 20px;
+}
+
+.comment {
+    width: 90%;
+    margin: 10px;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    background-color:rgba(54, 142, 255,   0.2); 
+    color: #24252A;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+.commentFlexBox svg{
+    padding: 10px 12px;
+    margin: 10px;
+    border-radius: 50px;
+    border: 1px solid #558ef5;
+}
+
+.commentFlexBox{
+    display: flex;
+
+}
+.commentFlexBox h1{
+    margin-bottom: 5px;
+    font-size: 16px;
+    padding: 0;
+    color: #24252A;
+
+}
+.commentInnerBox{
+    flex: 1;
+    background-color: #fefefe;
+    border-radius: 0 7px 7px 0    ;
+    width: 100%;
+    min-height: 100px;
+    margin-left: 5px;
+
+}
+
+
+
+/* Review Section */
+.review-section {
+    margin-top: 200px;
+    border-top: 1px solid #24252A;
+    padding-top: 20px;
+  }
+  
+  #userReviews {
+    margin-top: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+  }
+
+.review-section div{
+    width: 100%;
+    text-align: right;
+}
+.review-section button{
+    padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    
+    font-size: 15px;
+    border: 0;
+	background: rgba(54, 142, 255, 1);
+	margin: 0 7px;
+	border-radius: 25px;
+
+	color: #fefefe;
+	text-decoration: none;
+}
+
+
+.titleflexbox{
+    display: flex;
+    flex-direction: row;
+}
+.shareDiv{
+
+    margin-top: 25px;
+    vertical-align: baseline;
+    position: relative;
+
+}
