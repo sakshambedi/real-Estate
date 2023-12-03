@@ -23,10 +23,10 @@ html, body {
     flex-direction: row;
 }
 
-.righ-section{
+/* .righ-section{
     display: flex;
     flex-direction: row;
-}
+} */
 
 .side-bar {
     width: 500px;
@@ -34,7 +34,7 @@ html, body {
     padding: 10px;
     height: 95%; /* Set a fixed height for the sidebar */
     overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
-    border: 2px solid #ddd;
+    border-right: 2px solid #ddd;
     margin: 0px 10px 0px 0px;
 
 }
@@ -46,15 +46,57 @@ html, body {
     margin:0px 0px 20px 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
+    border: 2px solid #ddd;
 }
 
+/*** Filter CSS ***/
 .filter {
-    background-color: blue;
-    padding: 10px;
+    background-color: #fefefe;
+    padding: 10px 20px;
     margin: 0px 0px 10px 0px;
     height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #24252A;
+    border-radius: 10px;
+    flex-direction: column; /* Arrange child elements vertically */
+    justify-content: center; /* Center child elements horizontally */
+    align-items: center; 
 }
 
+.filter-input {
+    /* flex: 0 0 48%; */
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Display labels above input boxes */
+}
+
+.filter-input label {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.filter-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #45a049;
+}
+
+.submitBtn{
+    height: 100%;
+    width: 70px;
+    padding: 10px 0px 0px 0px;
+    justify-self: center;
+}
+
+/************************* Map section *************************/
 .map-content {
     flex-grow: 1;
     background-color: #fefefe;

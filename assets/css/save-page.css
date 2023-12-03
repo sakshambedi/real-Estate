@@ -14,7 +14,7 @@ html, body {
     display: flex;
     width:auto;
     align-items: center;
-    margin: 0px 50px 0px 50px;
+    margin: 20px 50px 0px 50px;
     padding:20px;
     justify-content: space-between;
     border: 2px solid #ddd;

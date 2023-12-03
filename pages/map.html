@@ -19,6 +19,12 @@
 
     <meta charset="UTF-8">
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@14.7.0/distribute/nouislider.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@14.7.0/distribute/nouislider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@14.7.0/distribute/nouislider.min.css" />
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -82,9 +88,34 @@
 
             <div class="right-section">
                 <div class="filter">
-                    <!-- Your filter content goes here -->
-                    <p>This is the filter content.</p>
+                    <div class="filter-input">
+                        <label for="search">Search:</label>
+                        <input type="text" id="search" name="search" placeholder="Enter keywords...">
+                    </div>
+                    <div class="filter-input">
+                        <label for="bedrooms">Number of Bedrooms:</label>
+                        <input type="number" id="bedrooms" name="bedrooms" placeholder="Bedrooms">
+                    </div>
+                    <div class="filter-input">
+                        <label for="bathrooms">Number of Bathrooms:</label>
+                        <input type="number" id="bathrooms" name="bathrooms" placeholder="Bathrooms">
+                    </div>
+                    <div class="filter-input">
+                        <label for="listing-low">Listing Starting Price</label>
+                        <input type="text" id="listing-low" name="listing-low"
+                            placeholder="Starting price of the listing">
+                    </div>
+                    <div class="filter-input">
+                        <label for="listing-low">Listing Maximum Price</label>
+                        <input type="text" id="listing-high" name="listing-high"
+                            placeholder="Upper bound price of the listing">
+                    </div>
+                    <div class="sumbitBtn">
+                        <button type="button" class="filter-button" onclick="applyFilters()">Apply Filters</button>
+                    </div>
                 </div>
+
+
                 <div class="map-content">
                     <!-- Your map content goes here -->
                     <img src="../assets/imgs/map.png" />
