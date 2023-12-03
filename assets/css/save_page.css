@@ -11,7 +11,7 @@
 }
 
 
-body { min-width: 1460px; 
+body {  
   color: #24252A; 
 }
 .agent {
@@ -83,7 +83,7 @@ ul.breadcrumb li a:hover {
 
 .content{
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* margin-top: 50px; */
   margin-bottom: 150px;
 }
@@ -91,10 +91,14 @@ ul.breadcrumb li a:hover {
 .property-card a {
   text-decoration: none;
 }
+
 .property-card a:hover{
   text-decoration: underline;
 }
 .property-card p:hover{
+  text-decoration: none;
+}
+.icon a{
   text-decoration: none;
 }
 

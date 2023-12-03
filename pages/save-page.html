@@ -67,22 +67,21 @@
 <div class="content">
     <div class="sidebar"> 
       <div class="sidebar-container">
-      <ul class="breadcrumb">
-        <li><a href="../index.html">Home</a></li>
-        <li>Save</li>
-      </ul>
+        <ul class="breadcrumb">
+          <li><a href="../index.html">Home</a></li>
+          <li>Save</li>
+        </ul>
 
-      <a href="compare.html">
-        <div class="compare-button" >
-          Compare
-        </div>
+        <a href="compare.html">
+          <div class="compare-button" >
+            Compare
+          </div>
         </a>
-      </li>
       <div id="results">
         Saved Properties: 10 Listings
-        
       </div>
     </div>
+    
       
       <div class="sidebaritem mousescroll">
         
@@ -114,7 +113,7 @@
           <div class="container-price">
             <div class="detail-price"> $ 180,000</div>
             <div class="detail-address"> 919 Manitoba Avenue Winnipeg, Manitoba R2X0J9 </div> <br>
-            <div class="detail-room"><i class="fa-solid fa-bed" style="color: #0f4c75;"></i> 3 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i> 1</div>
+            <div class="detail-room"> <i class="fa-solid fa-bed" style="color: #0f4c75;"></i> 3 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i> 1</div>
           </div>
             <div class="container-description">
               <h3>Property Description</h3> 
@@ -352,12 +351,13 @@ function sidebar_content(property){
         <div class="unbookmark"><i class="fa fa-bookmark"></i></div>
     </div>
     <a href="detail.html">
-    <div class="address">${property.address} </div> <br>
-    <div class="price">${property.price} </div> <br>
+      <div class="address">${property.address} </div> <br>
+      <div class="price">${property.price} </div> <br>
     </a>
+    <p>
     <div class="icon">    
        <i class="fa-solid fa-bed" style="color: #0f4c75;"></i> ${property.bed} <i class="fa-solid fa-bath" style="color: #0f4c75;"></i> ${property.bath} <br>
-    
+    </p>
     </div>
     </div>
     `;
