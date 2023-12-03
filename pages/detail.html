@@ -51,7 +51,7 @@
   </div>
 
 
-  <div class="mainContiner">
+  <div class="mainContiner" id="zoomtest">
 
     <div class="titleflexbox">
       <div class="title">
@@ -297,18 +297,27 @@
 
   <!-- Footer Ends Here -->
   <script>
-    // Your existing script for image slideshow and reviews
+// var maxZoomWidth = 1360; // Set the maximum width below which zoom will be enabled
+// var fixedZoomLevel = 1.25; // Set the desired fixed zoom level
 
-    // Function to display a confirmation pop-up when submitting a review
-    function submitReviewConfirmation(callback) {
-      const isConfirmed = confirm(
-        "Are you sure you want to submit this review?"
-      );
+// function updateZoom() {
+//   var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  
+//   if (screenWidth <= maxZoomWidth) {
+//     var contentDiv = document.getElementById('testzoom');
+//     contentDiv.style.zoom = fixedZoomLevel;
+//   } else {
+//     var contentDiv = document.getElementById('testzoom');
+//     contentDiv.style.zoom = "1";
+//   }
+//   console.log(contentDiv.style.zoom)
+// }
 
-      if (isConfirmed) {
-        callback(); // If confirmed, execute the callback function
-      }
-    }
+
+// // Call the function on page load
+// window.addEventListener('load', updateZoom);
+
+
 
     // Function to submit a review
     function submitReview() {
