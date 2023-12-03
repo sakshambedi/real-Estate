@@ -2,12 +2,12 @@ body { min-width: 1460px;
 color: #24252A; }
 
 .mainContiner {
-    margin-left: 15%;
-    margin-left: 15%;
-    max-width: 1460px;
-    min-width: 1360px;
+    /* margin:auto; */
+    /* max-width: 1460px;
+    min-width: 1360px; */
     position: relative;
     justify-content: center;
+    padding: 100px;
     margin-top: 20px;
 }
 
@@ -42,7 +42,7 @@ color: #24252A; }
     display: grid;
     grid-template-columns: repeat(auto-fill, 330px);
     grid-gap: 15px;
-    width: 22.5%;
+    /* width: 22.5%; */
 }
 
 .smallPic {
