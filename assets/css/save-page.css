@@ -1,0 +1,108 @@
+/* Resetting some default styles */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set height of html and body to 100% */
+html, body {
+    width: 100%;
+}
+
+.compare-div{
+    display: flex;
+    width:auto;
+    align-items: center;
+    margin: 0px 50px 0px 50px;
+    padding:20px;
+    justify-content: space-between;
+    border: 2px solid #ddd;
+}
+
+.compare-button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: #24252A;
+    color: #fefefe;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+.compare-button:hover {
+    background: #3A3B41;
+}
+
+
+/* Style for the main content container */
+.main-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-around; /* Add space between items */
+    margin: 0;
+    padding: 20px;
+    row-gap: 10px;
+}
+
+/* Style for the property section */
+.property-content {
+    margin-bottom: 20px;
+}
+
+/* Style for the property listing container */
+.property-listing {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style for each property card */
+.property-card {
+    flex: 0 0 calc(20% - 10px);
+    margin: 10px;
+    text-decoration: none;
+    color: #333; /* Text color for the card */
+    border: 1px solid #ddd; /* Border color for the card */
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the property card image */
+.property-card img {
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid #ddd; 
+}
+
+/* Style for the information container inside the property card */
+.information {
+    padding: 10px;
+}
+
+/* Style for the property title */
+.property-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style for the property price */
+.property-card-price {
+    font-size: 16px;
+    color: #0e8129; /* Price color */
+    margin-bottom: 5px;
+}
+
+/* Style for the bed and bath icons */
+.fa-bed, .fa-bath {
+    margin-right: 5px;
+    color: #0f4c75;
+}
