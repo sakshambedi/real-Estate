@@ -51,8 +51,9 @@ display: none;
 #map {
 flex: 1;
 overflow: hidden;
+width: 100%;
 margin-top: 20px;
-width: 80vh;
+margin-right: 5px;
 /* width: 100%;
 padding: 20px;
 min-height: 100vh;
@@ -68,7 +69,7 @@ transition: all 0.3s; */
 }
 
 #map img {
-width: 150vh;
+/* width: 150vh; */
 
 }
 
