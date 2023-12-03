@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./../assets/css/user-profile.css" />
 
   <!-- JS Imports -->
-  <script src="./../assets/js/user-profile.js"></script>
+  
 
   <title>Real Estate User Profile</title>
 </head>
@@ -122,10 +122,10 @@
         </div>
       </section>
 
-      <h2>Preference Settings Section</h2>
+      
       <section id="preferenceSettingsSection">
         <div class="flex-container-pref">
-
+          <h2 style="font-size: 30px;">User Preference</h2>
           <div class="flex-section-pref">
             <div class="form-item-pref">
               <label for="bedroom">Number of Bedrooms</label>
@@ -140,8 +140,6 @@
               <input type="text" id="parking" name="parking">
             </div>
           </div>
-
-
           <div class="flex-section-pref">
             <div class="form-item-pref">
               <label for="provice">Price Starting Range($)</label>
@@ -164,6 +162,126 @@
             </div>
           </div>
         </div>
+
+        <div class="flex-container-pref">
+          <h2 style="font-size: 30px;">Additional feature</h2>
+          <p style="margin-left: 20px; margin-bottom: 20px;">Here are some additional features you may like, adding an extra layer of comfort and sophistication to your living experience:</p>
+          <div class="flex-section-pref">
+            <div class="form-item-pref">
+              <label class="feature-lable">Interior Features</label>
+              <div class="checkbox-group">
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Humidifier</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Alarm System</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Blinds</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Dishwasher</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Dryer</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Stove</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Laminate</label>
+                </div>
+              </div>
+            </div>
+        
+            <div class="form-item-pref">
+              <label class="feature-lable">Building Features</label>
+              <div class="checkbox-group">
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Low maintenance yard</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Closet</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">No Smoking Home</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Sump Pump</label>
+                </div>
+              </div>
+            </div>
+        
+            <div class="form-item-pref">
+              <label class="feature-lable">Heating & Cooling</label>
+              <div class="checkbox-group">
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Central air conditioning</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Electric (Tile Facing)</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Heat Recovery Ventilation(HRV)</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">High-Efficiency Furnace</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Forced air (Natural gas)</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-item-pref">
+              <label class="feature-lable">Exterior Features</label>
+              <div class="checkbox-group">
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Pool</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Basketball Court</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-item-pref">
+              <label class="feature-lable">Parking</label>
+              <div class="checkbox-group">
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Attached Garage</label>
+                </div>
+                <div class="feature">
+                  <input type="checkbox" id="interiorFeature1" name="interiorFeature1">
+                  <label for="interiorFeature1">Heated Driveway</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+        <div class="save-btn" style="display: flex; justify-content: center; align-items: center; padding-top: 50px; padding-bottom: 100px;">
+          <button id="save-account-button">Save Preference</button>
+        </div>  
+        <div id="toasts"></div> 
       </section>
 
       <section id="adminSection">
@@ -190,6 +308,7 @@
       </section>
     </div>
   </div>
+  <script src="./../assets/js/user-profile.js"></script>
 </body>
 
 </html>
