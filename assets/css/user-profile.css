@@ -15,9 +15,10 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   padding: 10px;
-  width: 30vh;
+  width: 27vh;
   margin: 0px 0px 0px 0px;
-  height: 92vh;
+  min-height: 100vh;
+  /* height: 100%; */
   border-right: 2px solid #ddd;
 }
 
@@ -120,7 +121,7 @@ section {
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
-  margin: 50px 0px 40px 20px;
+  margin: 50px 0px 32px 20px;
 }
 
 h4{
@@ -236,22 +237,33 @@ input[type="submit"]:hover {
   margin: 0px 0px 40px 20px;
 }
 
-/**/
+/*Preference*/
+/*Sachin's code*/
+/* #preferenceSettingsSection {
+  border: 2px solid #ddd;
+} */
+
 .flex-container-pref {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 12px;
   margin: 10px 0px 0px 15px;
-  
+  border: 2px solid #ddd;
 }
 
 .flex-section-pref{
   display: flex;
   direction: row;
+  margin-left: 25px;
+  flex-wrap: wrap;
 }
 
-#form-item-pref {
+.flex-section-pref .form-item-pref:not(:first-child) {
+  margin-left: 20px;
+}
+
+.form-item-pref {
   margin-bottom: 20px;
   width: 250px;
   height:fit-content;
@@ -267,11 +279,11 @@ input[type="submit"]:hover {
   flex: 0 0 calc(50% - 10px);
 } */
 
-#form-item-pref label {
+.form-item-pref label {
   text-align: left;
 }
 
-#form-item-pref input {
+.form-item-pref input {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -279,12 +291,63 @@ input[type="submit"]:hover {
   box-sizing: border-box;
 }
 
+.feature {
+  display: flex;
+  align-items: center;
+}
+
+.feature input {
+  width: 14px;
+  margin-right: 10px;
+}
+
+#save-account-button {
+  background-color: green;
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0px 0px 40px 20px;
+}
+
+#delete-account-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+.feature-lable {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.toast {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: .5rem;
+}
+
+#toasts {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Sachin's code end here */
+
 
 
 /* Delele Section CSS*/
 
-#delete-account-button:hover {
-  background-color: #c0392b; /* Darker red on hover */
+#save-account-button:hover {
+  background-color: #1aa91a; /* Darker red on hover */
 }
 
 #confirmation-modal {

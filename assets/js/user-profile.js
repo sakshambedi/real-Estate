@@ -102,6 +102,12 @@ function showConfirmation() {
     document.getElementById("confirmation-modal").style.display = "flex";
 }
 
+function showConfirmationSave() {
+    // var username = "user_good"; // Replace with the actual username
+    // document.getElementById("username-placeholder").innerText = username;
+    // document.getElementById("confirmation-modal").style.display = "flex";
+}
+
 function hideConfirmation() {
     document.getElementById("confirmation-modal").style.display = "none";
 }
@@ -151,3 +157,21 @@ document.addEventListener('DOMContentLoaded', function () {
         dropdown.add(optionElement);
     });
 });
+
+
+const saveBtn = document.getElementById('save-account-button');
+saveBtn.addEventListener('click', () => createNotification());
+const toasts = document.getElementById('toasts');
+
+function createNotification() {
+    const notif = document.createElement('div');
+    notif.classList.add('toast');
+
+    notif.innerText = "Preference Saved";
+
+    toasts.appendChild(notif);
+
+    setTimeout(() => {
+        notif.remove();
+    }, 2500)
+}
