@@ -1,10 +1,16 @@
-const inputs = document.querySelectorAll(".input");
+const input1 = document.getElementById('input1');
+const input2 = document.getElementById('input2');
+const submitBtn = document.getElementById('submitBtn')
+  ;
 
-function focusFunx() {
-  let parent = this.parentNode.parentNode;
-  parent.classList.add("focus");
+function checkInputs() {
+  event.preventDefault()
+  if (input1.value == 'admin' && input2.value == 'admin') {
+
+    window.location = "./../index.html";
+  } else {
+    alert("Please try username: ADMIN and Password:ADMIN for marking instance.");
+  }
 }
 
-inputs.forEach((input) => {
-  input.addEventListener("focus", focusFunx);
-});
+submitBtn.addEventListener('click', checkInputs);
