@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/footer.css" />
   <link rel="stylesheet" href="../assets/css/detail.css" />
+  <link rel="stylesheet" href="../assets/css/breadcrumb.css" />
 
   <!-- JS Script Imports-->
   <script type="module" src="../assets/js/properties-object.js" defer></script>
@@ -25,30 +26,42 @@
 
 <body>
   <div class="header">
-        <a href="../index.html"><img src="../assets/logo/logo_no_bg.png" alt="Our Logo" class="logo"></a>
-        <!-- <nav class="user-nav"> -->
-        <ul class="nav_links">
-          <!-- <li><a href="pages/Dashboard.html">Dashboard</a></li> -->
-          <li><a href="map.html">Maps</a></li>
-          <li><a href="compare.html">Saves/Compare</a></li>
-          <li><a href="Sell.html">Sell</a></li>
-        </ul>
-        <!-- <a class="cta" href="pages/user-profile.html"><img class="user-account-svg" src="./assets/icons/user.svg" /></a> -->
-        <div class="user-icon">
-          <a href="user-profile.html"><img class="user-account-svg" src="../assets/icons/user.svg"></a>
-          <div class="dropdown-content">
-            <a href="#">Preferences</a>
-            <a href="#">Settings</a>
-            <a href="log_in.html">Sign In</a>
-          </div>
-        </div>
-        <div class="dropdown-content">
-          <a href="#">Preferences</a>
-          <a href="#">Settings</a>
-          <a href="#">Logout</a>
-        </div>
-        <!-- </nav> -->
+    <a href="../index.html"><img src="../assets/logo/logo_no_bg.png" alt="Our Logo" class="logo"></a>
+    <!-- <nav class="user-nav"> -->
+    <ul class="nav_links">
+      <!-- <li><a href="pages/Dashboard.html">Dashboard</a></li> -->
+      <li><a href="map.html">Maps</a></li>
+      <li><a href="compare.html">Saves/Compare</a></li>
+      <li><a href="Sell.html">Sell</a></li>
+    </ul>
+    <!-- <a class="cta" href="pages/user-profile.html"><img class="user-account-svg" src="./assets/icons/user.svg" /></a> -->
+    <div class="user-icon">
+      <a href="user-profile.html"><img class="user-account-svg" src="../assets/icons/user.svg"></a>
+      <div class="dropdown-content">
+        <a href="#">Preferences</a>
+        <a href="#">Settings</a>
+        <a href="log_in.html">Sign In</a>
+      </div>
+    </div>
+    <div class="dropdown-content">
+      <a href="#">Preferences</a>
+      <a href="#">Settings</a>
+      <a href="#">Logout</a>
+    </div>
+    <!-- </nav> -->
   </div>
+
+  <!-- Bread Crumbs -->
+  <div class="bread-crumb-div">
+    <ul class="breadcrumb">
+      <li><a href="../index.html">Home</a></li>
+      <li><i class="fa-solid fa-chevron-right"></i></li>
+      <li><a href="./save-page.html">Save</a></li>
+      <li><i class="fa-solid fa-chevron-right"></i></li>
+      <li>Listing: Listing Title</li>
+    </ul>
+  </div>
+  <!-- bread Crumbs Ends Here-->
 
 
   <div class="mainContiner" id="zoomtest">
@@ -79,7 +92,7 @@
       </div>
 
     </div>
-    
+
 
     <div class="details">
 
@@ -98,33 +111,52 @@
               <h2>$120,000</h2>
             </div>
             <div class="rightTableCell2">
-              3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i>  4 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i>
+              3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i> 4 <i class="fa-solid fa-bath"
+                style="color: #0f4c75;"></i>
             </div>
           </div>
         </div>
-        
+
         <div class="halfCOlm">
           <div class="hlafColmNest">
             <div class="cardBlock flexit">
               <h1>Property Summary</h1>
               <table>
                 <tr>
-                  <td style="text-align: left; padding: 10px;"><div class="label">Beds</div> 1</br></td>
-                  <td style="text-align: left; padding: 10px;"><div class="label">Heat</div> Baseboard Heaters</br></td>
-                  <td style="text-align: left; padding: 10px;"><div class="label">Amenities</div> Shopping</br></td>
+                  <td style="text-align: left; padding: 10px;">
+                    <div class="label">Beds</div> 1</br>
+                  </td>
+                  <td style="text-align: left; padding: 10px;">
+                    <div class="label">Heat</div> Baseboard Heaters</br>
+                  </td>
+                  <td style="text-align: left; padding: 10px;">
+                    <div class="label">Amenities</div> Shopping</br>
+                  </td>
                 </tr>
                 <tr>
-                  <td style="text-align: left;padding: 10px;"><div class="label">Bathrooms</div> 1</br></td>
-                  <td style="text-align: left;padding: 10px;"><div class="label">Utility</div> Water</br></td>
-                  <td style="text-align: left;padding: 10px;"><div class="label">Property Size</div> 674 sqft</br></td>
+                  <td style="text-align: left;padding: 10px;">
+                    <div class="label">Bathrooms</div> 1</br>
+                  </td>
+                  <td style="text-align: left;padding: 10px;">
+                    <div class="label">Utility</div> Water</br>
+                  </td>
+                  <td style="text-align: left;padding: 10px;">
+                    <div class="label">Property Size</div> 674 sqft</br>
+                  </td>
                 </tr>
                 <tr>
-                  <td style="text-align: left;padding: 10px;"><div class="label">Cool</div> Wall Unit</br></td>
-                  <td style="text-align: left;padding: 10px;"><div class="label">Floor</div> Carpet, Other</br></td>
-                  <td style="text-align: left;padding: 10px;"><div class="label">Parking</div> None, Other, Rear</br></td>
+                  <td style="text-align: left;padding: 10px;">
+                    <div class="label">Cool</div> Wall Unit</br>
+                  </td>
+                  <td style="text-align: left;padding: 10px;">
+                    <div class="label">Floor</div> Carpet, Other</br>
+                  </td>
+                  <td style="text-align: left;padding: 10px;">
+                    <div class="label">Parking</div> None, Other, Rear</br>
+                  </td>
                 </tr>
               </table>
-            </div> 
+            </div>
 
             <div class="cardBlock flexit">
               <img height=100% width=100% src="../assets/imgs/calculater.png">
@@ -132,7 +164,7 @@
           </div>
 
           <div class="middlespace"></div>
-          
+
 
           <div class="hlafColmNest">
             <div class="cardBlock flexit">
@@ -144,10 +176,10 @@
                 </div>
               </div> -->
 
-              
+
               <div class="commentFlexBox">
-                <i class="fa-solid fa-user" font-size= 20px style="color: #558ef5;"></i>
-                <div class="hlafColmNest">                
+                <i class="fa-solid fa-user" font-size=20px style="color: #558ef5;"></i>
+                <div class="hlafColmNest">
                   <div class="comment">
                     <h1>Dang</h1>
                     <a>I want this house</a>
@@ -156,8 +188,8 @@
                 </div>
               </div>
               <div class="commentFlexBox">
-                <i class="fa-solid fa-user" font-size= 20px style="color: #558ef5;"></i>
-                <div class="hlafColmNest">                
+                <i class="fa-solid fa-user" font-size=20px style="color: #558ef5;"></i>
+                <div class="hlafColmNest">
                   <div class="comment">
                     <h1>Jun</h1>
                     <a>Lovely place. Good neighberhood</a>
@@ -166,8 +198,8 @@
                 </div>
               </div>
               <div class="commentFlexBox">
-                <i class="fa-solid fa-user" font-size= 20px style="color: #558ef5;"></i>
-                <div class="hlafColmNest">                
+                <i class="fa-solid fa-user" font-size=20px style="color: #558ef5;"></i>
+                <div class="hlafColmNest">
                   <div class="comment">
                     <h1>Danieal</h1>
                     <a>You might want to have good shoes. The bus stop is bit far away about 10min walk</a>
@@ -176,8 +208,8 @@
                 </div>
               </div>
               <div class="commentFlexBox">
-                <i class="fa-solid fa-user" font-size= 20px style="color: #558ef5;"></i>
-                <div class="hlafColmNest">                
+                <i class="fa-solid fa-user" font-size=20px style="color: #558ef5;"></i>
+                <div class="hlafColmNest">
                   <div class="comment">
                     <h1>Jackson</h1>
                     <p>Can you please contace me?</p>
@@ -187,8 +219,8 @@
                 </div>
               </div>
               <div class="commentFlexBox">
-                <i class="fa-solid fa-user" font-size= 20px style="color: #558ef5;"></i>
-                <div class="hlafColmNest">                
+                <i class="fa-solid fa-user" font-size=20px style="color: #558ef5;"></i>
+                <div class="hlafColmNest">
                   <div class="comment">
                     <h1>CityGuy007</h1>
                     <a>I rememember seeing this house while driving. Nice neighberhood indeed.</a>
@@ -197,8 +229,8 @@
                 </div>
               </div>
               <div class="commentFlexBox">
-                <i class="fa-solid fa-user" font-size= 20px style="color: #558ef5;"></i>
-                <div class="hlafColmNest">                
+                <i class="fa-solid fa-user" font-size=20px style="color: #558ef5;"></i>
+                <div class="hlafColmNest">
                   <div class="comment">
                     <h1>Andrew</h1>
                     <a>You can contact one of the realtor to view the house. They were very nice.</a>
@@ -208,19 +240,16 @@
               </div>
 
               <div class="property-section review-section">
-                <textarea
-                  id="reviewInput"
-                  placeholder="Write your review..."
-                ></textarea>
+                <textarea id="reviewInput" placeholder="Write your review..."></textarea>
                 <div> <button onclick="submitReview()">Submit</button> </div>
               </div>
 
             </div>
           </div>
         </div>
-        
+
       </div>
-      
+
 
       <div class="rightColm">
         <div class="cardBlock">
@@ -259,7 +288,7 @@
 
   </div>
 
- 
+
 
 
   <!-- Footer here -->
@@ -297,25 +326,25 @@
 
   <!-- Footer Ends Here -->
   <script>
-// var maxZoomWidth = 1360; // Set the maximum width below which zoom will be enabled
-// var fixedZoomLevel = 1.25; // Set the desired fixed zoom level
+    // var maxZoomWidth = 1360; // Set the maximum width below which zoom will be enabled
+    // var fixedZoomLevel = 1.25; // Set the desired fixed zoom level
 
-// function updateZoom() {
-//   var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-  
-//   if (screenWidth <= maxZoomWidth) {
-//     var contentDiv = document.getElementById('testzoom');
-//     contentDiv.style.zoom = fixedZoomLevel;
-//   } else {
-//     var contentDiv = document.getElementById('testzoom');
-//     contentDiv.style.zoom = "1";
-//   }
-//   console.log(contentDiv.style.zoom)
-// }
+    // function updateZoom() {
+    //   var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    //   if (screenWidth <= maxZoomWidth) {
+    //     var contentDiv = document.getElementById('testzoom');
+    //     contentDiv.style.zoom = fixedZoomLevel;
+    //   } else {
+    //     var contentDiv = document.getElementById('testzoom');
+    //     contentDiv.style.zoom = "1";
+    //   }
+    //   console.log(contentDiv.style.zoom)
+    // }
 
 
-// // Call the function on page load
-// window.addEventListener('load', updateZoom);
+    // // Call the function on page load
+    // window.addEventListener('load', updateZoom);
 
 
 
@@ -342,7 +371,7 @@
         }
       });
     }
-</script>
+  </script>
 </body>
 
 </html>
