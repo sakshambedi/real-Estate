@@ -14,11 +14,81 @@
   --house-color: #0288d1;
 }
 
+/* map slide up */
+
+.map-btn {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  left: 50%;
+  /* z-index: 1; */
+}
+
+.map-container {
+
+  margin-left: 100px;
+  margin-right: 100px;
+  overflow: visible;
+  position: absolute;
+  top: 100%;
+  transition: all .5s ease-in;
+  z-index: 99999;
+}
+
+.map-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0 0 8px rgba(28, 28, 28, 0.81);
+
+}
+
+.change-map {
+  top: 20%;
+}
+
+.change-body {
+  overflow: visible;
+}
+
+/* map slide up */
+
 html, 
 body {
+  overflow: hidden;
     height: 90%;
 }
 
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  z-index: 1;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 10px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
 
 /* Combine */
 .combine {
@@ -32,14 +102,14 @@ body {
   width: 50%;
   position: fixed;
   z-index: 1;
-  top: 0;
-  padding-top: 20px;
+  /* top: 0; */
+  /* padding-top: 20px; */
   overflow-x: hidden;
 }
 
 /* Control the left side */
 .left {
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
   left: 0;
   background-color: #f4f4f4; /* Neutral background color */
   border-right: 2px solid #000; /* Dark black line to separate from the right side */
@@ -57,7 +127,7 @@ scrollbar-width: none;  /* Firefox */
 
 /* Control the right side */
 .right {
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
   right: 0;
   /* background-color: #f4f4f4; Neutral background color */
 }
@@ -74,9 +144,9 @@ scrollbar-width: none;  /* Firefox */
 
 /* If you want the content centered horizontally and vertically */
 .centered {
-  margin-top: -50vh;
+  /* margin-top: -50vh; */
   position: absolute;
-  top: 50%;
+  top: 45px;
   left: 50%;
   transform: translate(-50%);
   text-align: center;
@@ -306,14 +376,14 @@ button:hover {
 .detail-price {
   font-size:xx-large; /* Increased font size for the price */
   font-weight: bold; /* Added bold font weight for emphasis */
-  color: var(--house-color); /* Blue color for the price */
+  color: #24252A; /* Blue color for the price */
   margin: 20px;
 }
 
 .detail-address {
-  padding-top: 20px;
+  padding-top: 17px;
   font-size: x-large; /* Increased font size for the address */
-  color: var(--secondaryColor); /* Blue color for the address */
+  color: #24252A; /* Blue color for the address */
   font-weight: bold;
 }
 

@@ -63,6 +63,13 @@
     <!--Header-->
 <div class="combine">
     <div class="split left">
+    <!--Bread-->
+    <ul class="breadcrumb">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./save-page.html">Save</a></li>
+      <li>Compare</li>
+    </ul>
+    <!--Bread-->
       <div class="centered">
         <div class="property-card">
           <div class="image-container">
@@ -175,6 +182,8 @@
       </div>
     </div>
 
+
+
     <div class="split right">
       <div class="centered">
         <div class="property-card">
@@ -271,6 +280,27 @@
         <button id="myButton2" class="like-button"><i class="fa-solid fa-heart"></i></button>
       </div>
     </div>
+
+
+    <!--MAP SLIDE UP -->
+    <div class="map-container" id="mapContainer">
+      <button class="map-btn" id="mapBtn">slid-up</button>
+      <img src="../assets/imgs/compareMap.png" alt="map" class="map-img">
+      <script>
+        var map = document.getElementById("mapContainer");
+       var btn = document.getElementById("mapBtn");
+         btn.addEventListener("click", () => {
+          console.log("Button clicked!");
+          map.classList.toggle("change-map");
+          // document.body.classList.toggle("change-body");
+          document.body.overflow = "none";
+
+      })
+      </script>
+  </div>
+    <!--MAP SLIDE UP -->
+
+    
 <!--combine-->
   </div>
 
