@@ -1,34 +1,13 @@
-const searchInput = document.getElementById("searchInput");
-const searchButton = document.querySelector(".search-box-button");
-
-// Add an event listener for the "Enter" key
-searchInput.addEventListener("keypress", function (event) {
-  if (event.key === "Enter") {
-    searchRealEstate();
-  }
-});
-
-searchButton.addEventListener("click", function () {
-  searchRealEstate();
-});
-
 function searchRealEstate() {
-  const query = searchInput.value.trim();
-
-  if (isValidInput(query)) {
-    // Redirect to the map page with the search query as a parameter
-    window.location.href = `./pages/map.html`;
+  event.preventDefault()
+  var searchInput = document.getElementById('searchInput').value;
+  console.log(searchInput)
+  // Check if the search input is not empty
+  if (searchInput.trim() !== '') {
+    // Redirect to the map page for a valid search
+    window.location.href = './pages/map.html';
   } else {
-    showInvalidInputPopup();
+    alert("Please enter an address or property type");
   }
-}
-
-function isValidInput(query) {
-  // Check if the input is not empty or just whitespace
-  return query !== "";
-}
-
-function showInvalidInputPopup() {
-  // Display a pop-up or alert for invalid input
-  alert("Please try again! Enter a valid search.");
+  // If the search input is empty, nothing happens
 }
