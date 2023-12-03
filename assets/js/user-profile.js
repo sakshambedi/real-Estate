@@ -122,26 +122,32 @@ function deleteAccount() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    let lastClickedButton = null;
+    // Sample data for the dropdown options
+    const optionsData = ['Choose One', 'Alberta', 'British Columbia', 'Manitoba', 'New Brunswick', 'Newfoundland and Labrador', 'Northwest Territories', 'Nova Scotia', 'Nunavut', 'Ontario', 'Prince Edward Island', 'Quebec', 'Saskatchewan', 'Yukon Territory'];
 
-    const sidebarButtons = document.querySelectorAll('.side-bar-button');
+    // Get the dropdown element
+    const dropdown = document.getElementById('dynamicDropdown-province');
 
-    sidebarButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            // Remove 'active' class and reset color of the last clicked button
-            if (lastClickedButton) {
-                lastClickedButton.classList.remove('active');
-                lastClickedButton.style.backgroundColor = '#f8f9fa'; // Reset to default color
-                lastClickedButton.style.color = ''; // Reset text color
-            }
+    // Populate the dropdown with options
+    optionsData.forEach(option => {
+        const optionElement = document.createElement('option');
+        optionElement.text = option;
+        dropdown.add(optionElement);
+    });
+});
 
-            // Add 'active' class and change color of the clicked button
-            this.classList.add('active');
-            this.style.backgroundColor = '#28a745'; // Change to your desired green color
-            this.style.color = '#fff'; // Change text color to white
 
-            // Set the current button as the last clicked button
-            lastClickedButton = this;
-        });
+document.addEventListener('DOMContentLoaded', function () {
+    // Sample data for the dropdown options
+    const optionsData = ['Choose One', 'Canada', 'United States'];
+
+    // Get the dropdown element
+    const dropdown = document.getElementById('dynamicDropdown-country');
+
+    // Populate the dropdown with options
+    optionsData.forEach(option => {
+        const optionElement = document.createElement('option');
+        optionElement.text = option;
+        dropdown.add(optionElement);
     });
 });

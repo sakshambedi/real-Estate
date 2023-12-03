@@ -236,7 +236,52 @@ input[type="submit"]:hover {
   margin: 0px 0px 40px 20px;
 }
 
+/**/
+.flex-container-pref {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 10px 0px 0px 15px;
+  
+}
 
+.flex-section-pref{
+  display: flex;
+  direction: row;
+}
+
+#form-item-pref {
+  margin-bottom: 20px;
+  width: 250px;
+  height:fit-content;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* .flex-container #form-item-pref {
+  flex: 0 0 calc(50% - 10px);
+} */
+
+#form-item-pref label {
+  text-align: left;
+}
+
+#form-item-pref input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+/* Delele Section CSS*/
 
 #delete-account-button:hover {
   background-color: #c0392b; /* Darker red on hover */
@@ -317,4 +362,23 @@ input[type="submit"]:hover {
 
 .cancel-button:hover {
   background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* DropDown Feature */
+.dropdown-container {
+  text-align: center;
+  margin: 0 20px; /* Add margin between the dropdown containers */
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 5px;
 }
