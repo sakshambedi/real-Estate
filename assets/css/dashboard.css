@@ -208,16 +208,43 @@ p {
 
 .information {
   color: #24252a;
+  text-decoration: none;
+}
+
+.property-card-title {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: larger;
+  line-height: 1.2em;
+  letter-spacing: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.property-card-price {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: larger;
+  line-height: 1.2em;
+  letter-spacing: 0.8px;
+  color: var(--secondaryColor);
 }
 
 .property-card img {
   width: 100%; /* Responsive image */
-  height: auto;
+  height: 16rem;
   border-radius: 10px;
 }
 
 .property-card:hover {
   cursor: pointer;
+  text-decoration: underline;
+}
+
+.info:hover {
+  text-decoration: none;
 }
 
 /* Media Query for 2 cards in a row on medium screens */
