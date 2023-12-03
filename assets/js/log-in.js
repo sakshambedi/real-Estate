@@ -9,7 +9,7 @@ function checkInputs() {
 
     window.location = "./../index.html";
   } else {
-    alert("Please try username: ADMIN and Password:ADMIN for marking instance.");
+    alert("Please try username: 'admin' and Password: 'admin' for marking instance.");
   }
 }
 
