@@ -236,14 +236,18 @@ input[type="submit"]:hover {
   margin: 0px 0px 40px 20px;
 }
 
-/**/
+/*Preference*/
+/*Sachin's code*/
+#preferenceSettingsSection {
+  border: 2px solid #ddd;
+}
+
 .flex-container-pref {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 12px;
-  margin: 10px 0px 0px 15px;
-  
+  margin: 10px 0px 0px 15px; 
 }
 
 .flex-section-pref{
@@ -251,7 +255,11 @@ input[type="submit"]:hover {
   direction: row;
 }
 
-#form-item-pref {
+.flex-section-pref .form-item-pref:not(:first-child) {
+  margin-left: 20px;
+}
+
+.form-item-pref {
   margin-bottom: 20px;
   width: 250px;
   height:fit-content;
@@ -267,11 +275,11 @@ input[type="submit"]:hover {
   flex: 0 0 calc(50% - 10px);
 } */
 
-#form-item-pref label {
+.form-item-pref label {
   text-align: left;
 }
 
-#form-item-pref input {
+.form-item-pref input {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
