@@ -30,6 +30,7 @@
             type="text"
             id="searchInput"
             placeholder="Search by Address, City or Neighborhood..."
+            oninput="handleInput()"
           />
           <button class="search-box-button" onclick="searchRealEstate()">
             &#128269;
@@ -76,59 +77,103 @@
 
     <hr />
 
-    <!--Popular-Properties-Section-->
-    <section class="property-content">
-      <h2>Popular Properties</h2>
-      <div class="property-listing">
-        <!-- Property Card 1 -->
-        <div class="property-card">
-          <img src="assets/imgs/property1.jpeg" alt="Property 1" />
-          <h3>123 ABC Street</h3>
-          <h4>$999,999</h4>
-          <h4>7 🛏 4 🛁</h4>
-        </div>
+  <!--Popular-Properties-Section-->
+  <section class="property-content">
+    <h2>Popular Properties</h2>
+    <div class="property-listing">
 
-        <!-- Property Card 2 -->
-        <div class="property-card">
-          <img src="../assets/imgs/property2.jpeg" alt="Property 2" />
-          <h3>142 BDC Street</h3>
-          <h4>$897,999</h4>
-          <h4>6 🛏 4 🛁</h4>
-        </div>
+      <!-- Property Card 1 -->
 
-        <!-- Property Card 3 -->
-        <div class="property-card">
-          <img src="../assets/imgs/property3.jpeg" alt="Property 3" />
-          <div class="property-card-address">13 XYC Bay</div>
-          <h4>$899,999</h4>
-          <h4>5 🛏 3 🛁</h4>
-        </div>
-
-        <!-- Property Card 4 -->
-        <div class="property-card">
-          <img src="../assets/imgs/property4.jpeg" alt="Property 4" />
-          <h3>139 BLA Street</h3>
-          <h4>$429,999</h4>
-          <h4>4 🛏 2.5 🛁</h4>
-        </div>
-
-        <!-- Property Card 5 -->
-        <div class="property-card">
-          <img src="../assets/imgs/property5.jpeg" alt="Property 5" />
-          <h3>122 LMN Avenue</h3>
-          <h4>$389,999</h4>
-          <h4>4 🛏 2 🛁</h4>
-        </div>
-
-        <!-- Property Card 6 -->
-        <div class="property-card">
-          <img src="../assets/imgs/property6.jpeg" alt="Property 6" />
-          <h3>12 XYZ Avenue</h3>
-          <h4>$919,999</h4>
-          <h4>8 🛏 4 🛁</h4>
-        </div>
+      <div class="property-card" onclick="redirectToDetailPage()">
+        <img src="assets/imgs/property1.jpeg" alt="Property 1" />
+          <div href="./pages/detail.html" class="information">
+            <div class="property-card-title">
+              123 ABC Street <br> 
+            </div>
+            <div class="property-card-price">
+              $999,999 <br>
+            </div>
+            3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i>  4 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i>
+          </div>
       </div>
-    </section>
+
+      <!-- Property Card 2 -->
+
+      <div class="property-card" onclick="redirectToDetailPage()">
+        <img src="assets/imgs/property2.jpeg" alt="Property 2" />
+          <div href="./pages/detail.html" class="information">
+            <div class="property-card-title">
+              123 ABC Street <br> 
+            </div>
+            <div class="property-card-price">
+              $999,999 <br>
+            </div>
+            3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i>  4 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i>
+          </div>
+      </div>
+
+      <!-- Property Card 3 -->
+
+      <div class="property-card" onclick="redirectToDetailPage()">
+        <img src="assets/imgs/property3.jpeg" alt="Property 3" />
+          <div href="./pages/detail.html" class="information">
+            <div class="property-card-title">
+              123 ABC Street <br> 
+            </div>
+            <div class="property-card-price">
+              $999,999 <br>
+            </div>
+            3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i>  4 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i>
+          </div>
+      </div>
+
+      <!-- Property Card 4 -->
+
+      <div class="property-card" onclick="redirectToDetailPage()">
+        <img src="assets/imgs/property4.jpeg" alt="Property 4" />
+          <div href="./pages/detail.html" class="information">
+            <div class="property-card-title">
+              123 ABC Street <br> 
+            </div>
+            <div class="property-card-price">
+              $999,999 <br>
+            </div>
+            3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i>  4 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i>
+          </div>
+      </div>
+
+
+      <!-- Property Card 5 -->
+      
+      <div class="property-card" onclick="redirectToDetailPage()">
+        <img src="assets/imgs/property5.jpeg" alt="Property 5" />
+          <div href="./pages/detail.html" class="information">
+            <div class="property-card-title">
+              123 ABC Street
+            </div>
+            <div class="property-card-price">
+              $999,999
+            </div>
+            3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i>  4 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i>
+          </div>
+          
+      </div>
+
+      <!-- Property Card 6 -->
+
+      <div class="property-card" onclick="redirectToDetailPage()">
+        <img src="assets/imgs/property6.jpeg" alt="Property 6" />
+          <div href="./pages/detail.html" class="information">
+            <div class="property-card-title">
+              123 ABC Street <br> 
+            </div>
+            <div class="property-card-price">
+              $999,999 <br>
+            </div>
+            3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i>  4 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i>
+          </div>
+      </div>
+  </section>
 
     <hr />
 
@@ -150,39 +195,14 @@
       </p>
     </section>
     <script>
-      const searchInput = document.getElementById("searchInput");
-      const searchButton = document.querySelector(".search-box-button");
-
-      // Add an event listener for the "Enter" key
-      searchInput.addEventListener("keypress", function (event) {
-        if (event.key === "Enter") {
-          searchRealEstate();
-        }
-      });
-
-      searchButton.addEventListener("click", function () {
-        searchRealEstate();
-      });
-
       function searchRealEstate() {
-        const query = searchInput.value.trim();
-
-        if (isValidInput(query)) {
-          // Redirect to the map page with the search query as a parameter
-          window.location.href = `/pages/compare.html`;
-        } else {
-          showInvalidInputPopup();
+        var searchInput = document.getElementById('searchInput').value;
+        // Check if the search input is not empty
+        if (searchInput.trim() !== '') {
+          // Redirect to the map page for a valid search
+          window.location.href = './map.html';
         }
-      }
-
-      function isValidInput(query) {
-        // Check if the input is not empty or just whitespace
-        return query !== "";
-      }
-
-      function showInvalidInputPopup() {
-        // Display a pop-up or alert for invalid input
-        alert("Please try again! Enter a valid search.");
+        // If the search input is empty, nothing happens
       }
     </script>
   </body>
