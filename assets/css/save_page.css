@@ -10,18 +10,72 @@
     --house-color: #0288D1;
 }
 
-
-.breadcrumbs {
-  font-size: 14px;
-  margin-left: 25px;
+body { min-width: 1460px; 
+  color: #24252A; 
+}
+.agent {
+  margin-left: 15px;
+  border: 1px solid #cdcdcd;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #fefefe;
+  position: relative;   
+  margin-bottom: 15px;
 }
 
-.breadcrumbs a {
+.container-description{
+  border: 1px solid #cdcdcd;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #fefefe;
+  position: relative;   
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.container-price{
+  border: 1px solid #cdcdcd;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #fefefe;
+  position: relative;   
+  margin-bottom: 15px;
+
+}
+
+.detail-description {
+  margin-top: -10px;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  /* padding: 10px 16px; */
+  list-style: none;
+  margin-left: 27px;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 11px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
   text-decoration: none;
-  color: #0077cc;
 }
 
-.breadcrumbs a:hover {
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
   text-decoration: underline;
 }
 
@@ -29,10 +83,17 @@
 .content{
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  margin-bottom: 150px;
 }
 
 .property-card a{
+  text-decoration: none;
+}
+.property-card a:hover{
+  text-decoration: underline;
+}
+.property-card p:hover{
   text-decoration: none;
 }
 
@@ -44,15 +105,19 @@
 } */
 
 .sidebar{
-  padding-top: 15px;
+  padding-top: 20px;
   flex-basis: auto;
-  height: 880px;
+  height: 130vh;
   /* min-width: 250px;
   max-width: 250px;
   color: #fff;
   transition: all 0.3s;
   overflow-y: scroll;
   height: 100vh; */
+}
+
+.sidebar-container {
+  padding-bottom: 10px;
 }
 
 #results {
@@ -102,7 +167,7 @@
     margin: 10px 0px 0 0;
 } */
 .property-card {
-    width: 640px;
+    width: 550px;
     height: 150px;
     margin: 10px 0 20px 20px;
     padding: 20px;
@@ -110,7 +175,7 @@
     text-align: left;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 4px 20px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 7px 7px rgba(0, 0, 0, 0.2);
 }
 
 .property-card .address {
@@ -119,8 +184,9 @@
     margin-top: -18px;
 }
 .property-card .price{
-    color: var(--blackColor);
+    color: #24252A;
     font-size: 16px;
+    font-weight: bold;
     margin-top: -12px;
 }
 
@@ -143,7 +209,7 @@
 }
 
 .sidebaritem {
-  width: 700px;   
+  width: 640px;   
 }
 
 div#sidebartitle {
@@ -158,7 +224,7 @@ div#sidebartitle {
   color: #0f4c75;
   font-size: 25px;
   cursor: pointer;
-  margin-left: 580px;
+  margin-left: 500px;
 }
 
 .bookmark:hover {
@@ -167,9 +233,9 @@ div#sidebartitle {
 
 /* detail property*/
 .mySlides {
-  margin-top: 10px;
+  margin-top: 38px;
   display:none;
-  width: 100vh;
+  width: 102vh;
   height: 500px;
 }
 .w3-content {
@@ -184,7 +250,7 @@ div#sidebartitle {
   background-color: var(--darkPrimaryColor);
   color: white;
   cursor: pointer;
-  margin-top: -170px;
+  margin-top: 38px;
 }
 
 .button.left {
@@ -213,14 +279,15 @@ div#sidebartitle {
 }
 
 .detail-price {
-  color: #0288D1;
-  font-size: 30px;
+  color: #24252A;
+  font-size: 23px;
+  font-weight: bold;
 }
 
 
 .detail-room,
 .detail-address {
-  font-size: 20px;
+  font-size: 15px;
   display: inline-block;
   margin-right: 10px; /* Adjust the margin as needed */
 }
@@ -229,8 +296,8 @@ div#sidebartitle {
 }
 /* agent box */
 .agent {
-  margin-left: auto;
-  padding-left: 80px;
+  /* margin-left: auto; */
+  padding-left: 30px;
   /* border: 1px solid black; */
   margin-top: 30px;
   width: 25vh;
