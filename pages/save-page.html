@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- Google map  -->
-    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
 
-    <link rel="stylesheet" href="./../assets/css/style_map.css" />
+    <link rel="stylesheet" href="./../assets/css/save-page.css" />
     <link rel="stylesheet" href="./../assets/css/nav-bar.css" />
     <link rel="stylesheet" href="./../assets/css/breadcrumb.css" />
     <link rel="stylesheet" href="./../assets/css/style.css">
@@ -24,7 +24,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>CityLife Map</title>
+
+    <title>CityLife Save/Compare</title>
+
+
+
 </head>
 
 <body>
@@ -56,10 +60,20 @@
         <ul class="breadcrumb">
             <li><a href="../index.html">Home</a></li>
             <li><i class="fa-solid fa-chevron-right"></i></li>
-            <li>Map</li>
+            <li>Save/Compare</li>
         </ul>
     </div>
     <!-- bread Crumbs Ends Here-->
+
+    <div class="compare-div">
+        <div class="compare-description">
+            <p>This page contains all properties that you saved!</p>
+        </div>
+        <a href="./compare.html" class="compare-button">Compare</a>
+    </div>
+
+    <!-- This handles the properties in a card format-->
+    <div class="main-content" id="propertyContainer"></div>
 
 
     <!-- Footer here -->
@@ -85,12 +99,14 @@
             <div class="social-icons">
                 <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
                 <i class=" fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-x" style="color: #ffffff;"></i>
+                <i class="fa-regular fa-x" style="color: #ffffff;"></i>
                 <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
             </div>
         </div>
     </div>
     <!-- Footer Ends Here -->
+
+    <script src="./../assets/js/save-page.js"></script>
 </body>
 
 </html>

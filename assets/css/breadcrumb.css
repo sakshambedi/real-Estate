@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.bread-crumb-div {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 00px 50px;
+    padding: 20px;
+}
+
+.breadcrumb {
+    list-style: none;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size:15px;
+
+}
+
+.bread-crumb-div a{
+    color: #007bff;
+    text-decoration: underline;
+
+}
+
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+    margin-right: 5px; /* Adjust the spacing between items */
+}
+
+.fa-chevron-right {
+    /* Add your styling for the chevron-right icon */
+}
