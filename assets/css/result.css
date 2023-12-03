@@ -9,15 +9,44 @@
     box-sizing: inherit;
 }
 
-html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  margin-left: 57px;
 }
 
+ul.breadcrumb li {
+  display: inline;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+/* html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+} */
+
+
 body {
-    font-family: "Nunito", sans-serif;
+    /* font-family: "Nunito", sans-serif;
     font-weight: 300;
-    background-color: #f4f2f2;
+    background-color: #f4f2f2; */
+    font-family: sans-serif;
 }
 
 .heading {
@@ -37,15 +66,16 @@ body {
 
 .container {
     max-width: 156rem;
-    margin: 8rem auto;
+    margin: 2% 5%;
     /* background-color: #f4f2f2; */
-    min-height: 50rem;
-    zoom: 80%;
+    /* min-height: 50rem; */
+    zoom: 70%;
 }
 
 .content {
     display: flex;
     flex-direction: column;
+    min-width: 1300px;
 }
 
 .card {
@@ -53,19 +83,21 @@ body {
     display: flex;
     margin-top: 2rem;
     align-items: stretch;
-    box-shadow: 0 0 10px rgba(0, 31, 63, 0.5);
-    border:1px solid #ccc;
+    /* box-shadow: 0 0 10px rgba(0, 31, 63, 0.5); */
+    /* border:1px solid #ccc; */
 }
 
 .number {
     /* background-color: burlywood; */
-    width: 20rem;
-    flex-shrink: 0;
+    width: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12em;
+    font-size: 7em;
     background-color: #3282b8;
+}
+.blankspace{
+    width: 15px;
 }
 
 
@@ -73,9 +105,8 @@ body {
     /* flex-wrap: wrap; */
     flex: 1;
     /* background-color: blue; */
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 15px;
+    padding: 20px;
+    padding-right: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,69 +115,93 @@ body {
 
 .details {
     display: flex;
+    align-items: center;
+    font-size: 25px;
+
     /* flex-grow: 1; */
     /* justify-content: space-between; */
 }
 
 .house {
     /* background-color: slateblue; */
-    width: 75rem;
+    /* width: 75rem; */
     margin-right: auto;
+    flex: 1;
+
+    position: relative; 
 }
 
 .agent {
     /* background-color: pink; */
     /* justify-content: space-between; */
-    flex-grow: 1;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+}
+.agentbox{
     flex-wrap: wrap;
+    flex-direction: column;
+    width: 220px;
+        /* margin-top: 5%; */
+
 }
 
 .house-img {
     /* margin: -10px 0 0px -20px; */
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
+    /* flex:1; */
     /* padding-top: 10px; */
     /* padding-bottom: 10px; */
-    width: 350px;
-    height: 230px;
-    box-shadow: 0 0 10px rgba(0, 31, 63, 0.8);
-    border-radius: 14px;
+    /* width: 350px;
+    height: 230px; */
+    /* box-shadow: 0 0 10px rgba(0, 31, 63, 0.8);
+    border-radius: 14px; */
 }
 
 
 .house-properties {
-    padding-left: 4rem;
+    flex: 1;
+    padding: 30px;
 }
 
 .agent-properties {
-    padding-left: 4rem;
+    /* padding-left: 4rem; */
+    /* flex: 1; */
     /* padding-right: 1rem; */
+    margin-top: 5%;
+    font-size: 18px;
+    text-align: center;
+}
+.agentPicDivDiv {
+    flex: 1;
+    text-align: center;
 }
 
-p {
+/* p {
     margin-top: 20px;
     font-size: 20px;
-}
+} */
 
 .agent-name{
-    text-transform: uppercase;
-    font-size: 2.2rem;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: bold;
+    /* font-family: "Josefin Sans", sans-serif; */
+    /* font-weight: 800; */
 }
 
 .addr {
-    text-transform: uppercase;
-    font-size: 2.2rem;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 800;
+    font-size: 2rem;
+    /* font-family: "Josefin Sans", sans-serif; */
+    /* font-weight: 600; */
 }
 
 .agent-img{
     /* padding: 10px; */
-    width: 220px;
-    height: 230px;
-    margin-left: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* margin-left: 20px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); */
 
     /* object-fit: contain;
 
@@ -159,9 +214,20 @@ p {
 }
 
 .detail-room {
-    font-size: 20px;
+    font-size: 25px;
 }
 
-img {
+
+.house img {
+    width: 20rem;
     object-fit: cover;
+    height: 100%;
+    
 }
+
+/* .agent img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} */
+
