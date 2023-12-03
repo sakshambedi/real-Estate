@@ -182,10 +182,15 @@ const properties = [
 ];
 
 const propertyContainer = document.getElementById('propertyContainer');
-
 properties.forEach(property => {
     const propertyCard = document.createElement('div');
     propertyCard.className = 'property-card';
+
+    // Add click event listener to each property card
+    propertyCard.addEventListener('click', () => {
+        // Redirect to a specific HTML page, you can replace 'property-details.html' with your desired page
+        window.location.href = `./detail.html`;
+    });
 
     const image = document.createElement('img');
     image.src = property.imagePath;
