@@ -1,118 +1,121 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../assets/css/sign_up.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/sign_up.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<div class="CSSgal_container">
-<div class="CSSgal">
+  <!-- partial:index.partial.html -->
+  <div class="CSSgal_container">
+    <div class="CSSgal">
 
-  <!-- Don't wrap targets in parent -->
-  <s id="s1"></s> 
-  <s id="s2"></s>
-  <s id="s3"></s>
-  <s id="s4"></s>
+      <!-- Don't wrap targets in parent -->
+      <s id="s1"></s>
+      <s id="s2"></s>
+      <s id="s3"></s>
+      <s id="s4"></s>
 
-  <div class="slider">
+      <div class="slider">
 
-    <!-- #1 Slide -->
-    <div style="background:#fefefe;">
-      <div class="slideTitle">Sign up</div>
-      <div class="container singleColumn">
-        <div class="flexRowElement rowSingleColumn">
-          <div class="elementTitle">Email</div>
-          <input class="inputForm" id="input1a" placeholder="citylife@citylife.ca">
+        <!-- #1 Slide -->
+        <div style="background:#fefefe;">
+          <div class="slideTitle">Sign up</div>
+          <div class="container singleColumn">
+            <div class="flexRowElement rowSingleColumn">
+              <div class="elementTitle">Email</div>
+              <input class="inputForm" id="input1a" placeholder="citylife@citylife.ca">
+            </div>
+            <div class="emptyRow2"></div>
+            <div class="flexRowElement rowSingleColumn">
+              <div class="elementTitle">Password</div>
+              <input class="inputForm" id="input2a" type="password" placeholder="Max 12 characters, Include number">
+            </div>
+            <div class="emptyRow2"></div>
+            <div class="flexRowElement rowSingleColumn">
+              <div class="elementTitle">Confirm Password</div>
+              <input class="inputForm" id="input3a" type="password" placeholder="Repeat your password">
+            </div>
+          </div>
         </div>
-        <div class="emptyRow2"></div>
-        <div class="flexRowElement rowSingleColumn">
-          <div class="elementTitle">Password</div>
-          <input class="inputForm" id="input2a" type="password" placeholder="Max 12 characters, Include number">
-        </div>
-        <div class="emptyRow2"></div>
-        <div class="flexRowElement rowSingleColumn">
-          <div class="elementTitle">Cofirm Password</div>
-          <input class="inputForm" id="input3a" type="password" placeholder="Repeat your password">
-        </div>
-      </div>
-		</div>
 
-    <!-- #2 Slide -->
-    <div style="background:#fefefe;">
-      <div class="slideTitle">Personal Information</div>
-      <div class="container">
-        <div class="flexRow dynamicRow">
-          <div class="flexRowElement">
-            <div class="elementTitle">Full Name</div>
-            <input class="inputForm column_three" id="input1b" placeholder="First Name">
-          </div>
-          <div class="flexRowElement">
-            <div class="blank"> &nbsp</div>
-            <input class="inputForm column_three" id="input2b" placeholder="Middle Name">
-          </div>
-          <div class="flexRowElement">
-            <div class="blank">&nbsp</div>
-            <input class="inputForm column_three" id="input3b" placeholder="Last Name">
-          </div>
-        </div>
-        <div class="emptyRow"></div> 
-        <div class="emptyRow"></div>   
-        <div class="flexRow">
-          <div class="flexRowElement">
-            <div class="elementTitle">Phone Number</div>
-            <input type="tel" class="inputForm column_single" id="input4b" placeholder="(000) 000-0000">
-          </div>
-          
-        </div>
-      </div>
-		</div>
+        <!-- #2 Slide -->
+        <div style="background:#fefefe;">
+          <div class="slideTitle">Personal Information</div>
+          <div class="container">
+            <div class="flexRow dynamicRow">
+              <div class="flexRowElement">
+                <div class="elementTitle">Full Name</div>
+                <input class="inputForm column_three" id="input1b" placeholder="First Name">
+              </div>
+              <div class="flexRowElement">
+                <div class="blank"> &nbsp</div>
+                <input class="inputForm column_three" id="input2b" placeholder="Middle Name">
+              </div>
+              <div class="flexRowElement">
+                <div class="blank">&nbsp</div>
+                <input class="inputForm column_three" id="input3b" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="emptyRow"></div>
+            <div class="emptyRow"></div>
+            <div class="flexRow">
+              <div class="flexRowElement">
+                <div class="elementTitle">Phone Number</div>
+                <input type="tel" class="inputForm column_single" id="input4b" placeholder="(000) 000-0000">
+              </div>
 
-    <!-- #3 Slide -->
-    <div style="background: #fefefe;">
-      <div class="slideTitle">Preferences</div>
-      <div class="container">
-        <div class="flexRow">
-          <div class="flexRowElement">
-            <div class="elementTitle">Province</div>
-            <input class="inputForm column_three" id="input1" placeholder="You are looking for house at...">
-            <ul class="list"></ul>  
-          </div>
-          <div class="flexRowElement">
-            <div class="blank">City</div>
-            <input class="inputForm column_three" id="input2" placeholder="You are looking for house in...">
+            </div>
           </div>
         </div>
-        <div class="emptyRow"></div>  
-        <div class="emptyRow"></div> 
-        <div class="flexRow fromTo">
-          <div class="flexRowElement">
-            <div class="elementTitle">Price Range</div>
-            <input class="inputForm column_three" id="input3" placeholder="From (CAD)">
-          </div>
-          <div><a>~</a></div>
-          <div class="flexRowElement">
-            <div class="blank"> &nbsp</div>
-            <input class="inputForm column_three" id="input4" placeholder="To (CAD)">
-          </div>
-        </div>
-        <div class="emptyRow"></div>
-        <div class="flexRow dynamicRow">
-          <div class="flexRowElement">
-            <div class="elementTitle">Bedrooms</div>
-            <input class="inputForm column_three" id="input5" placeholder="# of Bedrooms">
-          </div>
-          <div class="flexRowElement">
-            <div class="elementTitle">Bathrooms</div>
-            <input class="inputForm column_three" id="input6" placeholder="# of Bathrooms">
-          </div>
-          <div class="flexRowElement">
-            <div class="elementTitle">Parking Spaces</div>
-            <input class="inputForm column_three" id="input7" placeholder="# of Parking Spaces ">
-          </div>
-        </div>
-        <!-- <div class="flexRow">
+
+        <!-- #3 Slide -->
+        <div style="background: #fefefe;">
+          <div class="slideTitle">Preferences</div>
+          <div class="container">
+            <div class="flexRow">
+              <div class="flexRowElement">
+                <div class="elementTitle">Province</div>
+                <input class="inputForm column_three" id="input1" placeholder="You are looking for house at...">
+                <ul class="list"></ul>
+              </div>
+              <div class="flexRowElement">
+                <div class="blank">City</div>
+                <input class="inputForm column_three" id="input2" placeholder="You are looking for house in...">
+              </div>
+            </div>
+            <div class="emptyRow"></div>
+            <div class="emptyRow"></div>
+            <div class="flexRow fromTo">
+              <div class="flexRowElement">
+                <div class="elementTitle">Price Range</div>
+                <input class="inputForm column_three" id="input3" placeholder="From (CAD)">
+              </div>
+              <div><a>~</a></div>
+              <div class="flexRowElement">
+                <div class="blank"> &nbsp</div>
+                <input class="inputForm column_three" id="input4" placeholder="To (CAD)">
+              </div>
+            </div>
+            <div class="emptyRow"></div>
+            <div class="flexRow dynamicRow">
+              <div class="flexRowElement">
+                <div class="elementTitle">Bedrooms</div>
+                <input class="inputForm column_three" id="input5" placeholder="# of Bedrooms">
+              </div>
+              <div class="flexRowElement">
+                <div class="elementTitle">Bathrooms</div>
+                <input class="inputForm column_three" id="input6" placeholder="# of Bathrooms">
+              </div>
+              <div class="flexRowElement">
+                <div class="elementTitle">Parking Spaces</div>
+                <input class="inputForm column_three" id="input7" placeholder="# of Parking Spaces ">
+              </div>
+            </div>
+            <!-- <div class="flexRow">
           <div class="flexRowElement">
             <div class="elementTitle">Living Area</div>
             <input class="inputForm column_three" placeholder="From (sqft)">
@@ -123,53 +126,56 @@
             <input class="inputForm column_three" placeholder="To (sqft)">
           </div>
         </div> -->
+          </div>
+
+        </div>
+
+        <!-- #4 Slide -->
+        <div style="background:#e59;">
+          <h2>Slide 4</h2>
+        </div>
       </div>
-      
-		</div>
 
-    <!-- #4 Slide -->
-    <div style="background:#e59;">
-			<h2>Slide 4</h2>
-		</div>
-  </div>
-
-  <!-- <div class="prevNext">
+      <!-- <div class="prevNext">
     <div><a href="#s1"><</a><a href="#s2">></a></div>
     <div><a href="#s1"><</a><a href="#s3">></a></div>
     <div><a href="#s2"><</a><a href="#s3">></a></div> -->
-    <!-- <div><a href="#s3"><</a><a href="#s1">></a></div> -->
-  <!-- </div>  -->
-  
-  <div class="bulletContainer">
-    <div class="prevNext">
-      <div><a class="right stealth" href="#s1"><</a></div>
-      <div><a id="submitBtn2a" class="right disabled_default" href="#s1">❮&nbsp</a></div>
-      <div><a id="submitBtn2b" class="right disabled_default" href="#s2">❮&nbsp</a></div>
       <!-- <div><a href="#s3"><</a><a href="#s1">></a></div> -->
-    </div>  
-  
-    <div class="bullets">
-      <a id="submitBtn3a" href="#s1">Sign Up</a>
-      <a href="#s2">Personal Info</a>
-      <a href="#s3">Preferences</a>
-      <!-- <a href="#s4">Requirements</a> -->
+      <!-- </div>  -->
+
+      <div class="bulletContainer">
+        <div class="prevNext">
+          <div><a class="right stealth" href="#s1">
+              << /a>
+          </div>
+          <div><a id="submitBtn2a" class="right disabled_default" href="#s1">❮&nbsp</a></div>
+          <div><a id="submitBtn2b" class="right disabled_default" href="#s2">❮&nbsp</a></div>
+          <!-- <div><a href="#s3"><</a><a href="#s1">></a></div> -->
+        </div>
+
+        <div class="bullets">
+          <a id="submitBtn3a" href="#s1">Sign Up</a>
+          <a href="#s2">Personal Info</a>
+          <a href="#s3">Preferences</a>
+          <!-- <a href="#s4">Requirements</a> -->
+        </div>
+
+        <div class="prevNext">
+          <div><a id="submitBtn1a" class="left disabled_default" href="#s2">&nbsp❯</a></div>
+          <div><a id="submitBtn1b" class="left disabled_default" href="#s3">&nbsp❯</a></div>
+          <div><a id="submitBtn" class="left disabled" href="#s3">Finish →</a></div>
+          <!-- <div><a href="#s3"><</a><a href="#s1">></a></div> -->
+        </div>
+      </div>
+
+
     </div>
-
-    <div class="prevNext">
-      <div><a id="submitBtn1a" class="left disabled_default" href="#s2">&nbsp❯</a></div>
-      <div><a id="submitBtn1b"class="left disabled_default" href="#s3">&nbsp❯</a></div>
-      <div><a id="submitBtn" class="left disabled" href="#s3">Finish →</a></div>
-      <!-- <div><a href="#s3"><</a><a href="#s1">></a></div> -->
-    </div>  
   </div>
+  <!-- partial -->
+  <!-- <script src="../assets/js/sign_up.js"></script> -->
+  <script src="../assets/js/sign_up.js">
 
-
-</div>
-</div>
-<!-- partial -->
-<!-- <script src="../assets/js/sign_up.js"></script> -->
-<script src="../assets/js/sign_up.js">
-
-</script>
+  </script>
 </body>
+
 </html>
