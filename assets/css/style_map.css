@@ -163,7 +163,6 @@ text-align: center;
 
 .property-card:hover {
   transition: all 0.3s ease-in-out;
-  transform: scale(1.05);
   box-shadow: 8px 25px 15px rgba(0, 0, 0, 0.2);
   background-color: var(--quaternaryColor);
   cursor: pointer;
