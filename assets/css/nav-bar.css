@@ -31,7 +31,7 @@
   background-color: #24252a;
   position: relative; /* Add this line to make the header fixed at the top */
   width: 100%; /* Add this line to make the header full-width */
-  top: 0; 
+  top: 0;
   z-index: 1000; /* Add this line to ensure the header is above other elements */
 }
 
@@ -47,7 +47,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  margin-left:auto; 
+  margin-left: auto;
 }
 
 .overlay__content a {
@@ -140,16 +140,14 @@
   width: 30px;
 }
 
-.user-nav{
+.user-nav {
   display: flex;
   align-items: center;
 }
 
-
-
 .user-icon:hover .dropdown-content {
   display: block;
-  color: #0088a9
+  color: #0088a9;
 }
 
 .user-icon {
@@ -158,7 +156,6 @@
   margin-top: 9px;
   fill: var(--whiteColor);
 }
-
 
 .user-icon:focus {
   cursor: pointer;
@@ -177,7 +174,7 @@
   color: #edf0f1;
   text-decoration: none;
 }
-.user-icon{
+.user-icon {
   margin-right: 20px;
   padding: 9px 25px;
   /* background-color: rgba(0, 136, 169, 1);
@@ -188,16 +185,14 @@
   position: relative;
 }
 
-
-
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  margin-left: -90px;
-  margin-top: 10px;
+  margin-left: -66px;
+  margin-top: 15px;
   border-radius: 10px;
 }
 

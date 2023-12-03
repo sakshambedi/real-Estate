@@ -269,19 +269,6 @@
             <button onclick="submitReview2()">Submit Review</button>
           </div> -->
 
-          <script>
-            function shareButtonClick() {
-              // Get the current URL
-              const currentUrl = window.location.href;
-
-              // Copy the URL to the clipboard
-              navigator.clipboard.writeText(currentUrl).then(() => {
-                // Show a confirmation popup
-                alert("Link copied to clipboard!");
-              });
-            }
-          </script>
-
           <div class="property-section share-button">
             <button class="share-button" onclick="shareButtonClick()">
               Share
@@ -317,46 +304,57 @@
 <!--combine-->
   </div>
 
+  <script>
+    function shareButtonClick() {
+      // Get the current URL
+      const currentUrl = window.location.href;
 
+      // Copy the URL to the clipboard
+      navigator.clipboard.writeText(currentUrl).then(() => {
+        // Show a confirmation popup
+        alert("Link copied to clipboard!");
+      });
+    }
+  </script>
 
-    <script>
-      let currentImageIndex = 1; // Assuming initial image is displayed
-      let currentImageIndex2 = 1; // Assuming initial image is displayed
+  <script>
+    let currentImageIndex = 1; // Assuming initial image is displayed
+    let currentImageIndex2 = 1; // Assuming initial image is displayed
 
+    showImage(currentImageIndex);
+    showImage2(currentImageIndex2);
+
+    function showNextImage() {
+      currentImageIndex = (currentImageIndex % 4) + 1; // Assuming 4 images per property
       showImage(currentImageIndex);
+    }
+    function showNextImage2() {
+      currentImageIndex2 = (currentImageIndex2 % 4) + 1; // Assuming 4 images per property
       showImage2(currentImageIndex2);
+    }
 
-      function showNextImage() {
-        currentImageIndex = (currentImageIndex % 4) + 1; // Assuming 4 images per property
-        showImage(currentImageIndex);
-      }
-      function showNextImage2() {
-        currentImageIndex2 = (currentImageIndex2 % 4) + 1; // Assuming 4 images per property
-        showImage2(currentImageIndex2);
-      }
+    function showPrevImage() {
+      currentImageIndex = ((currentImageIndex - 2 + 4) % 4) + 1;
+      showImage(currentImageIndex);
+    }
+    function showPrevImage2() {
+      currentImageIndex2 = ((currentImageIndex2 - 2 + 4) % 4) + 1;
+      showImage2(currentImageIndex2);
+    }
 
-      function showPrevImage() {
-        currentImageIndex = ((currentImageIndex - 2 + 4) % 4) + 1;
-        showImage(currentImageIndex);
-      }
-      function showPrevImage2() {
-        currentImageIndex2 = ((currentImageIndex2 - 2 + 4) % 4) + 1;
-        showImage2(currentImageIndex2);
-      }
-
-      function showImage(index) {
-        const slides = document.querySelectorAll(".mySlides");
-        slides.forEach((slide, i) => {
-          slide.style.display = i + 1 === index ? "block" : "none";
-        });
-      }
-      function showImage2(index) {
-        const slides = document.querySelectorAll(".mySlides2");
-        slides.forEach((slide, i) => {
-          slide.style.display = i + 1 === index ? "block" : "none";
-        });
-      }
-    </script>
+    function showImage(index) {
+      const slides = document.querySelectorAll(".mySlides");
+      slides.forEach((slide, i) => {
+        slide.style.display = i + 1 === index ? "block" : "none";
+      });
+    }
+    function showImage2(index) {
+      const slides = document.querySelectorAll(".mySlides2");
+      slides.forEach((slide, i) => {
+        slide.style.display = i + 1 === index ? "block" : "none";
+      });
+    }
+  </script>
 
     <script>
       // Your existing script for image slideshow and reviews
@@ -420,8 +418,8 @@
         });
       }
 
-      const properties = [
-    {
+      const properties = [ 
+      {
       id: 1,
       address: "919 Manitoba Avenue Winnipeg, Manitoba R2X0J9",
       description:
@@ -442,8 +440,8 @@
         lng: -97.154429,
       },
       imagePath: "../assets/housing images/house1/house1_1.jpeg",
-    },
-    {
+      },
+      {
       id: 2,
       address: "40 Jette Cove Winnipeg, Manitoba R2C5T4",
       description:
@@ -465,8 +463,8 @@
       },
   
       imagePath: "../assets/housing images/house2/house2_1.jpeg",
-    },
-    {
+      },
+      {
       id: 3,
       address: "638 Gilmore Avenue Winnipeg, Manitoba R2G2P6",
       description:
@@ -487,8 +485,8 @@
         lng: -97.114946,
       },
       imagePath: "../assets/housing images/house3/house3_1.jpeg",
-    },
-    {
+      },
+      {
       id: 4,
       address: "362 Tyson Trail Winnipeg, Manitoba R3W0K9",
       description:
@@ -509,8 +507,8 @@
         lng: -97.110312,
       },
       imagePath: "../assets/housing images/house4/house4_1.jpeg",
-    },
-    {
+      },
+      {
       id: 5,
       address: "393 Maryland Street Winnipeg, Manitoba R3G1M1",
       description:
@@ -791,11 +789,12 @@
     displayProperty2(propertyWithId2);
   }
   
-  function checkArray(property){
-    if(property.length == 0){  
-      window.location.href = `result.html`;
+    function checkArray(property){
+      if(property.length == 0){  
+        console.log("DONEEEE!");
+        window.location.href = `./pages/result.html`;
+      }
     }
-  }
     </script>
 
   </body>
