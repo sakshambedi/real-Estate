@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="../assets/css/nav-bar.css" />
   <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
   <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="./../assets/css/breadcrumb.css">
+
 
   <script type="module" src="../assets/js/script_map.js"></script>
   <script type="module" src="../assets/js/properties-object.js" defer></script>
@@ -59,16 +61,24 @@
   </div>
   <!-- Nav Bar Ends here  -->
 
+  <!-- Bread Crumbs -->
+  <div class="bread-crumb-div">
+    <ul class="breadcrumb">
+      <li><a href="../index.html">Home</a></li>
+      <li><i class="fa-solid fa-chevron-right"></i></li>
+      <li><a href="./save-page.html">Save</a></li>
+      <li><i class="fa-solid fa-chevron-right"></i></li>
+      <li>Compare</li>
+    </ul>
+  </div>
+  <!-- bread Crumbs Ends Here-->
+
   <!--Header-->
   <div class="combine">
     <div class="split left">
       <!--Bread-->
-      <ul class="breadcrumb">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./save-page.html">Save</a></li>
-        <li>Compare</li>
-      </ul>
-      <!--Bread-->
+
+
       <div class="centered">
         <div class="property-card">
           <div class="image-container">
@@ -259,7 +269,7 @@
 
     <!--MAP SLIDE UP -->
     <div class="map-container" id="mapContainer">
-      <button class="map-btn" id="mapBtn">slid-up</button>
+      <button class="map-btn" id="mapBtn">Map Slide Up</button>
       <img src="../assets/imgs/compareMap.png" alt="map" class="map-img">
       <script>
         var map = document.getElementById("mapContainer");
