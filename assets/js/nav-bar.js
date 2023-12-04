@@ -29,3 +29,28 @@ function changeTab(element) {
   // You can perform additional actions here based on the clicked tab
   // For example, load content dynamically or update other parts of the page
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const userIcon = document.getElementById('userIcon');
+  const settingsOption = document.getElementById('settings-dropdown');
+  const signInOption = document.getElementById('signin-dropdown');
+  const logoutOption = document.getElementById('logout-dropdown');
+
+
+  // Check sessionStorage variable
+  const isLoggedIn = sessionStorage.getItem('userLoggedIn') === 'true';
+  console.log(isLoggedIn)
+
+  if (isLoggedIn) {
+    // User is logged in, show "Settings" and "Logout"
+    settingsOption.style.display = 'block';
+    logoutOption.style.display = 'block';
+    signInOption.style.display = 'none';
+  } else {
+    // User is not logged in, show "Sign In" and hide "Settings" and "Logout"
+    settingsOption.style.display = 'none';
+    logoutOption.style.display = 'none';
+    signInOption.style.display = 'block';
+  }
+});

@@ -23,20 +23,24 @@
 </head>
 
 <body>
+  <!--Navbar here -->
   <div class="header">
     <a href="index.html"><img src="assets/logo/logo_no_bg.png" alt="Our Logo" class="logo"></a>
+    <!-- <nav class="user-nav"> -->
     <ul class="nav_links">
-      <li><a href="./pages/map.html" onclick="changeTab(this)">Maps</a></li>
-      <li><a href="./pages/save-page.html" onclick="changeTab(this)">Saves/Compare</a></li>
-      <li><a href="./pages/Sell.html" onclick="changeTab(this)">Sell</a></li>
+      <!-- <li><a href="pages/Dashboard.html">Dashboard</a></li> -->
+      <li><a href="./pages/map.html">Maps</a></li>
+      <li><a href="./pages/save-page.html">Saves/Compare</a></li>
+      <li><a href="./pages/Sell.html">Sell</a></li>
     </ul>
     <!-- <a class="cta" href="pages/user-profile.html"><img class="user-account-svg" src="./assets/icons/user.svg" /></a> -->
     <div class="user-icon">
-      <img class="user-account-svg" src="./assets/icons/user.svg">
+      <img class="user-account-svg" src="./assets/icons/user.svg" id="userIcon">
       <div class="dropdown-content">
         <!-- <a href="#">Preferences</a> -->
-        <a href="./pages/user-profile.html">Settings</a>
-        <a href="./pages/log_in.html">Sign In</a>
+        <a href="./pages/user-profile.html" id="settings-dropdown">Settings</a>
+        <a href="./pages/log_in.html" id="signin-dropdown">Sign In</a>
+        <a href="./pages/sign_in.html" id="logout-dropdown">Logout</a>
       </div>
     </div>
   </div>
