@@ -23,6 +23,7 @@
 </head>
 
 <body>
+  <!--Navbar here -->
   <div class="header">
     <a href="index.html"><img src="assets/logo/logo_no_bg.png" alt="Our Logo" class="logo"></a>
     <!-- <nav class="user-nav"> -->
@@ -34,11 +35,12 @@
     </ul>
     <!-- <a class="cta" href="pages/user-profile.html"><img class="user-account-svg" src="./assets/icons/user.svg" /></a> -->
     <div class="user-icon">
-      <img class="user-account-svg" src="./assets/icons/user.svg">
+      <img class="user-account-svg" src="./assets/icons/user.svg" id="userIcon">
       <div class="dropdown-content">
         <!-- <a href="#">Preferences</a> -->
-        <a href="./pages/user-profile.html">Settings</a>
-        <a href="./pages/log_in.html">Sign In</a>
+        <a href="./pages/user-profile.html" id="settings-dropdown">Settings</a>
+        <a href="./pages/log_in.html" id="signin-dropdown">Sign In</a>
+        <a href="./pages/sign_in.html" id="logout-dropdown">Logout</a>
       </div>
     </div>
   </div>
@@ -48,12 +50,8 @@
     <h2>Welcome to the Marketplace!</h2>
     <div class="search-box-wrapper">
       <div class="searchBar-wrapper">
-        <input
-          class="searchBar"
-          type="text"
-          id="searchInput"
-          placeholder="Search by Address, City or Neighborhood..."
-        />
+        <input class="searchBar" type="text" id="searchInput"
+          placeholder="Search by Address, City or Neighborhood..." />
         <button class="search-box-button" onclick="searchRealEstate()">
           &#128269;
         </button>
@@ -106,92 +104,98 @@
 
       <div class="property-card" onclick="redirectToDetailPage()">
         <img src="assets/imgs/property1.jpeg" alt="Property 1" />
-          <div href="./pages/detail.html" class="information">
-            <div class="property-card-title">
-              123 ABC Street <br> 
-            </div>
-            <div class="property-card-price">
-              $999,999 <br>
-            </div>
-            3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i>  4 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i>
+        <div href="./pages/detail.html" class="information">
+          <div class="property-card-title">
+            123 ABC Street <br>
           </div>
+          <div class="property-card-price">
+            $999,999 <br>
+          </div>
+          3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i> 4 <i class="fa-solid fa-bath"
+            style="color: #0f4c75;"></i>
+        </div>
       </div>
 
       <!-- Property Card 2 -->
 
       <div class="property-card" onclick="redirectToDetailPage()">
         <img src="assets/imgs/property2.jpeg" alt="Property 2" />
-          <div href="./pages/detail.html" class="information">
-            <div class="property-card-title">
-              123 ABC Street <br> 
-            </div>
-            <div class="property-card-price">
-              $999,999 <br>
-            </div>
-            3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i>  4 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i>
+        <div href="./pages/detail.html" class="information">
+          <div class="property-card-title">
+            123 ABC Street <br>
           </div>
+          <div class="property-card-price">
+            $999,999 <br>
+          </div>
+          3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i> 4 <i class="fa-solid fa-bath"
+            style="color: #0f4c75;"></i>
+        </div>
       </div>
 
       <!-- Property Card 3 -->
 
       <div class="property-card" onclick="redirectToDetailPage()">
         <img src="assets/imgs/property3.jpeg" alt="Property 3" />
-          <div href="./pages/detail.html" class="information">
-            <div class="property-card-title">
-              123 ABC Street <br> 
-            </div>
-            <div class="property-card-price">
-              $999,999 <br>
-            </div>
-            3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i>  4 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i>
+        <div href="./pages/detail.html" class="information">
+          <div class="property-card-title">
+            123 ABC Street <br>
           </div>
+          <div class="property-card-price">
+            $999,999 <br>
+          </div>
+          3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i> 4 <i class="fa-solid fa-bath"
+            style="color: #0f4c75;"></i>
+        </div>
       </div>
 
       <!-- Property Card 4 -->
 
       <div class="property-card" onclick="redirectToDetailPage()">
         <img src="assets/imgs/property4.jpeg" alt="Property 4" />
-          <div href="./pages/detail.html" class="information">
-            <div class="property-card-title">
-              123 ABC Street <br> 
-            </div>
-            <div class="property-card-price">
-              $999,999 <br>
-            </div>
-            3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i>  4 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i>
+        <div href="./pages/detail.html" class="information">
+          <div class="property-card-title">
+            123 ABC Street <br>
           </div>
+          <div class="property-card-price">
+            $999,999 <br>
+          </div>
+          3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i> 4 <i class="fa-solid fa-bath"
+            style="color: #0f4c75;"></i>
+        </div>
       </div>
 
 
       <!-- Property Card 5 -->
-      
+
       <div class="property-card" onclick="redirectToDetailPage()">
         <img src="assets/imgs/property5.jpeg" alt="Property 5" />
-          <div href="./pages/detail.html" class="information">
-            <div class="property-card-title">
-              123 ABC Street
-            </div>
-            <div class="property-card-price">
-              $999,999
-            </div>
-            3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i>  4 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i>
+        <div href="./pages/detail.html" class="information">
+          <div class="property-card-title">
+            123 ABC Street
           </div>
-          
+          <div class="property-card-price">
+            $999,999
+          </div>
+          3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i> 4 <i class="fa-solid fa-bath"
+            style="color: #0f4c75;"></i>
+        </div>
+
       </div>
 
       <!-- Property Card 6 -->
 
       <div class="property-card" onclick="redirectToDetailPage()">
         <img src="assets/imgs/property6.jpeg" alt="Property 6" />
-          <div href="./pages/detail.html" class="information">
-            <div class="property-card-title">
-              123 ABC Street <br> 
-            </div>
-            <div class="property-card-price">
-              $999,999 <br>
-            </div>
-            3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i>  4 <i class="fa-solid fa-bath" style="color: #0f4c75;"></i>
+        <div href="./pages/detail.html" class="information">
+          <div class="property-card-title">
+            123 ABC Street <br>
           </div>
+          <div class="property-card-price">
+            $999,999 <br>
+          </div>
+          3 <i class="fa-solid fa-bed" style="color: #0f4c75;"></i> 4 <i class="fa-solid fa-bath"
+            style="color: #0f4c75;"></i>
+        </div>
       </div>
   </section>
 
@@ -248,6 +252,7 @@
       window.location.href = './pages/detail.html';
     }
   </script>
+  <script src="./assets/js/nav-bar.js"></script>
 
 </body>
 
