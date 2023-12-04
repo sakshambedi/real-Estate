@@ -1,8 +1,8 @@
 const userData = {
     userID: 1,
-    user_name: "user_good",
+    user_name: "Patrick_HCI_Master",
     first_name: "Patrick",
-    last_name: "Dubious",
+    last_name: "Dubois",
     user_email: "pd@ILOVEHCI.ca",
     user_password: "pa$$word",
     phone_number: "204-123-1233",
@@ -12,6 +12,7 @@ const userData = {
         Bathroom: 2
     }
 };
+
 function showSection(sectionId) {
     // Hide all sections
     document.querySelectorAll('section').forEach(section => {

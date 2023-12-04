@@ -64,13 +64,14 @@
 .nav_links li a {
   transition: all 0.3s ease 0s;
   margin-right: 20px;
+  text-decoration: none; 
 }
 
 .nav_links li a:hover {
   color: #0088a9;
 }
 
-.nav-link li a:active{
+.nav-link li a.active{
   text-decoration: underline;
 }
 
