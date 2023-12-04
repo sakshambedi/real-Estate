@@ -16,15 +16,16 @@
 //     });
 // });  
 
-const doc = document;
-const menuOpen = doc.querySelector(".menu");
-const menuClose = doc.querySelector(".close");
-const overlay = doc.querySelector(".overlay");
+function changeTab(element) {
+  // Remove the 'active' class from all tabs
+  var tabs = document.querySelectorAll('.nav_links li a');
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].classList.remove('active');
+  }
 
-menuOpen.addEventListener("click", () => {
-  overlay.classList.add("overlay--active");
-});
+  // Add the 'active' class to the clicked tab
+  element.classList.add('active');
 
-menuClose.addEventListener("click", () => {
-  overlay.classList.remove("overlay--active");
-});
+  // You can perform additional actions here based on the clicked tab
+  // For example, load content dynamically or update other parts of the page
+}
